@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>title</title>
+        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans" rel="stylesheet"> 
+        <style>
+            html {
+                height: 100%;
+            }
+            
+            body {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                padding: 0px;
+                margin: 0px;
+            }
+            
+            h1 {
+                font-family: 'Josefin Sans', sans-serif;
+            }
+            
+            p {
+                font-family: 'Open Sans', sans-serif;
+            }
+            
+            #pinContainer {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+            
+            #pinContainer2 {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+            
+            #pinContainer3 {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+            
+            .slide {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+            
+            .slide-one {
+                background: url(bg_img/draft1.jpg) no-repeat center center fixed;
+                background-size: cover;
+            }
+            
+            .slide-two {
+                background: url(bg_img/draft1.jpg) no-repeat center center fixed;
+                background-size: cover;
+            }
+            
+            .slide-three {
+                background: url(bg_img/draft1.jpg) no-repeat center center fixed;
+                background-size: cover;
+            }
+            
+            .slide-four {
+                background: url(bg_img/draft3.jpg) no-repeat center center fixed;
+                background-size: cover;
+            }
+            
+            .slide-five {
+                background: url(bg_img/draft3.jpg) no-repeat center center fixed;
+                background-size: cover;
+            }
+            
+            .slide-six {
+                background: url(bg_img/draft2.jpg) no-repeat center center fixed;
+                background-size: cover;
+            }
+            
+            .slide-seven {
+                background: url(bg_img/draft2.jpg) no-repeat center center fixed;
+                background-size: cover;
+            }
+            
+            *.slide-two {
+                color: white;
+            }
+            
+            .content {
+                margin-top: 200px;
+                margin-left: 50px;
+            }
+            
+            .content h1 {
+                font-size: 10rem;
+            }
+            
+            .content p {
+                font-size: 3.5rem;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="pinContainer">
+            <section class="slide slide-one">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-6">
+                           <div class="content text-center">
+                               <object data="bg_img/newbraiswicklogo.svg" type="image/svg+xml" class=""></object>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-6 text-center">
+                            <a href="#schoolphoto" class="glyphicon glyphicon-chevron-down" style="position: relative; z-index: 10;"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="slide slide-two" id="about">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-6">
+                           <div class="content text-center">
+                               <h1>About us...</h1>
+                               <p class="text-center">Braiswick Photographic was established in <strong>1965</strong> operating from Colchester, Essex. Virtually all of our work is within the school environment, ranging from pre-school and toddler groups through to sixth form colleges.</p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+           <div id="pinContainer2">
+            <!--<section class="slide slide-three">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-6">
+                           <div class="content text-center">
+                               <h1>About us...</h1>
+                               <p class="text-center">Braiswick Photographic was established in <strong>1965</strong> operating from Colchester, Essex. Virtually all of our work is within the school environment, ranging from pre-school and toddler groups through to sixth form colleges.</p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </section>-->
+            
+            <section class="slide slide-four">
+                
+            </section>
+            
+            <section class="slide slide-five" id="schoolphoto">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                           <div class="content text-center">
+                               <h1>School Photography</h1>
+                               <p class="text-center">We have our own digital processing laboratory on site which caters for all of our production needs, in particular any special packages such as sepia, black &amp; white or pictures with digitally produced frames and borders.</p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+           <div id="pinContainer3">
+            
+            <section class="slide slide-six">
+                
+            </section>
+            
+            <section class="slide slide-seven">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-6">
+                            <div class="content text-center">
+                                <h1>ID Services</h1>
+                                <p class="text-center">We provide Proof of Age and Security ID Cards for school and business use. Proof of Age Cards are provided in conjunction with various Trading Standards Departments for 16+ students.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="testId"></div>
+       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/jquery.ScrollMagic.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <script>
+            $(document).ready(function (){
+                var controller = new ScrollMagic.Controller();
+                
+                var wipeAnimation = new TimelineMax()
+                    .fromTo("section.slide.slide-two", 20, {opacity: "0"}, {opacity: "1", ease: Linear.easeNone, delay: 15})
+                
+                var wipeAnimation2 = new TimelineMax()
+                    .fromTo("section.slide.slide-five", 20, {opacity: "0"}, {opacity: "1", ease: Linear.easeNone, delay: 15});
+                
+                var wipeAnimation3 = new TimelineMax()
+                    .fromTo("section.slide.slide-seven", 20, {opacity: "0"}, {opacity: "1", ease: Linear.easeNone, delay: 15});
+                
+                new ScrollMagic.Scene({
+                    triggerElement: "#pinContainer",
+                    triggerHook: "onLeave",
+                    duration: "300%"
+                })
+                .setPin("#pinContainer")
+                .setTween(wipeAnimation)
+                .addIndicators()
+                .addTo(controller);
+                
+                new ScrollMagic.Scene({
+                    triggerElement: "#pinContainer2",
+                    triggerHook: "onLeave",
+                    duration: "300%"
+                })
+                .setPin("#pinContainer2")
+                .setTween(wipeAnimation2)
+                .addIndicators()
+                .addTo(controller);
+                
+                new ScrollMagic.Scene({
+                    triggerElement: "#pinContainer3",
+                    triggerHook: "onLeave",
+                    duration: "300%"
+                })
+                .setPin("#pinContainer3")
+                .setTween(wipeAnimation3)
+                .addIndicators()
+                .addTo(controller);
+                
+                controller.scrollTo(function (newpos){
+                    TweenMax.to(window, 0.5, {scrollTo: {y: newpos}, ease: Cubic.easeInOut});
+                });
+                
+                $(document).on('click', 'a[href^="#"]', function(e){
+                    var id = $(this).attr('href');
+                    if ($(id).length > 0) {
+                        e.preventDefault();
+                        controller.scrollTo(id);
+                    }
+                });
+            });
+            
+            
+        </script>
+    </body>
+</html>

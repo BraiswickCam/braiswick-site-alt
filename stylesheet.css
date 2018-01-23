@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans');
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+}
+
+.loader-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: white;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loader {
+    position: absolute;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #138F34; 
+    border-bottom: 16px solid #FF6309;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: -120px;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+.loader-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: 50px;
+    width: 300px;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#pinContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.slide-one {
+    background: url(bg_img/draft1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.slide-two {
+    background: url(bg_img/draft1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.slide-three {
+    background: url(bg_img/draft1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.slide-four {
+    background: url(bg_img/draft3.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.slide-five {
+    background: url(bg_img/draft3.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.slide-six {
+    background: url(bg_img/draft2.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.slide-seven {
+    background: url(bg_img/draft2.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+*.slide-one {
+    color: white;
+}
+
+.slide-one p {
+    font-size: 2.5rem;
+}
+
+*.slide-two {
+    color: white;
+}
+
+.content {
+    margin-top: 200px;
+    margin-left: 50px;
+}
+
+.content h1 {
+    font-size: 10rem;
+}
+
+.content p {
+    font-size: 3.5rem;
+    padding: 20px;
+}
+
+.wrapper {
+    background-color: lightgrey;
+}
+
+.container {
+    background-color: white;
+}
