@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans');
 
-html {
+/*html {
     height: 100%;
-}
+}*/
 
-body {
+/*body {
     width: 100%;
     height: 100%;
-    position: relative;
+    height: 100vh;
     padding: 0px;
     margin: 0px;
-}
+}*/
 
 .loader-container {
     position: fixed;
@@ -74,70 +74,30 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
-#pinContainer {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
 .slide {
     width: 100%;
     height: 100%;
-    position: absolute;
+    height: 100vh;
 }
 
 .slide-one {
-    background: url(bg_img/draft1.jpg) no-repeat center center fixed;
+    background: url(bg_img/draft1.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .slide-two {
-    background: url(bg_img/draft1.jpg) no-repeat center center fixed;
+    background: url(bg_img/draft4.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .slide-three {
-    background: url(bg_img/draft1.jpg) no-repeat center center fixed;
+    background: url(bg_img/draft3.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .slide-four {
-    background: url(bg_img/draft3.jpg) no-repeat center center fixed;
+    background: url(bg_img/draft2.jpg) no-repeat center center;
     background-size: cover;
-}
-
-.slide-five {
-    background: url(bg_img/draft3.jpg) no-repeat center center fixed;
-    background-size: cover;
-}
-
-.slide-six {
-    background: url(bg_img/draft2.jpg) no-repeat center center fixed;
-    background-size: cover;
-}
-
-.slide-seven {
-    background: url(bg_img/draft2.jpg) no-repeat center center fixed;
-    background-size: cover;
-    background-attachment: scroll;
-}
-
-@media only screen and (max-width: 1024px) {
-    .slide {
-        position: static;
-        background-attachment: scroll;
-        height: 100vh;
-    }
-    
-    #pinContainer {
-        overflow: auto;
-        display: inline;
-        height: 100vh;
-    }
-    
-    .hidden-sm {
-        display: none;
-    }
 }
 
 *.slide-one {
@@ -149,7 +109,7 @@ p {
 }
 
 *.slide-two {
-    color: white;
+    
 }
 
 .content {
