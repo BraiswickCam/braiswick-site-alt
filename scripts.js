@@ -26,7 +26,7 @@ $(document).ready(function (){
         TweenMax.to(window, 0.5, {scrollTo: {y: newpos}, ease: Cubic.easeInOut});
     });
 
-    //$('.loader-container').fadeOut('slow');
+    $('.loader-container').fadeOut('slow');
 
     $(document).on('click', 'a[href^="#"]', function(e){
         var id = $(this).attr('href');
