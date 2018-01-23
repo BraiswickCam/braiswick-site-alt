@@ -126,11 +126,13 @@ p {
     .slide {
         position: static;
         background-attachment: scroll;
+        height: 100vh;
     }
     
     #pinContainer {
         overflow: auto;
         display: inline;
+        height: 100vh;
     }
     
     .hidden-sm {
