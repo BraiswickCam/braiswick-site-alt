@@ -86,31 +86,16 @@ p {
 }
 
 .slide-two {
-    background: url(bg_img/draft1.jpg) no-repeat center center;
+    background: url(bg_img/draft4.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .slide-three {
-    background: url(bg_img/draft1.jpg) no-repeat center center;
+    background: url(bg_img/draft3.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .slide-four {
-    background: url(bg_img/draft3.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-.slide-five {
-    background: url(bg_img/draft3.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-.slide-six {
-    background: url(bg_img/draft2.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-.slide-seven {
     background: url(bg_img/draft2.jpg) no-repeat center center;
     background-size: cover;
 }
@@ -124,7 +109,7 @@ p {
 }
 
 *.slide-two {
-    color: white;
+    
 }
 
 .content {
