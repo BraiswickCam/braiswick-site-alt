@@ -122,6 +122,22 @@ p {
     background-attachment: scroll;
 }
 
+@media only screen and (max-width: 1024px) {
+    .slide {
+        position: static;
+        background-attachment: scroll;
+    }
+    
+    #pinContainer {
+        overflow: auto;
+        display: inline;
+    }
+    
+    .hidden-sm {
+        display: none;
+    }
+}
+
 *.slide-one {
     color: white;
 }
