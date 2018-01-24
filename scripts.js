@@ -1,3 +1,5 @@
+var sectionMove = "";
+
 $.scrollify({
     section : ".slide",
     sectionName: "idname",
@@ -12,10 +14,18 @@ $.scrollify({
     updateHash: true,
     touchScroll:true,
     before:function() {},
-    after:function() {},
-    afterResize:function() {},
-    afterRender:function() {}
+    after:function() {console.log($.scrollify.current());},
+    afterResize: function() {},
+    afterRender: function() {},
+    afterUpdate: function() {onSectionExpand(sectionMove);}
   });
+
+function onSectionExpand(destination) {
+    if (destination != "") {
+            $.scrollify.move(destination);
+            sectionMove = "";
+        }
+}
 
 $(document).ready(function (){      
 
@@ -28,4 +38,19 @@ $(document).ready(function (){
             controller.scrollTo(id);
         }
     });*/
+    
+    $('button.btn').on('click', function() {
+        $('.expand').each(function() {
+            $(this).removeClass('slide');
+            $(this).addClass('hidden');
+        });
+        var dest = $(this).attr('data-dest');
+        console.log(dest);
+        var destIdName = $(this).attr('data-dest-idname');
+        console.log(destIdName);
+        $(dest).removeClass('hidden');
+        $(dest).addClass('slide');
+        $.scrollify.update();
+        sectionMove = destIdName;
+    });
 });

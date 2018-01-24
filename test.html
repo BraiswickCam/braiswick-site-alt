@@ -29,7 +29,7 @@
        <!-- END LOADING SCREEN -->
        
        <!-- ANIMATED SLIDES -->
-        <section class="slide slide-one" id="intro" data-idname="intro">
+        <section class="slide slide-one" data-idname="intro">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-5 col-md-offset-6">
@@ -46,31 +46,39 @@
                 </div>
             </div>
         </section>
-        <section class="slide slide-two" id="about" data-idname="about">
+        <section class="slide slide-two" data-idname="about">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
                        <div class="content text-center animatedParent">
                            <h1 class="animated fadeIn">About us...</h1>
                            <p class="text-center animated fadeIn delay-500">Braiswick Photographic was established in <strong>1965</strong> operating from Colchester, Essex. Virtually all of our work is within the school environment, ranging from pre-school and toddler groups through to sixth form colleges.</p>
+                           <button type="button" class="btn btn-primary" data-dest=".slide-two-expand" data-dest-idname="#about-expand">Learn More...</button>
                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="slide slide-three" id="schoolphotography" data-idname="schoolphotography">
+        <section class="slide-two-expand hidden expand" data-idname="about-expand">
+            
+        </section>
+        <section class="slide slide-three" data-idname="schoolphotography">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-5 col-md-offset-6">
                        <div class="content text-center animatedParent">
                            <h1 class="animated fadeIn">School Photography</h1>
                            <p class="text-center animated fadeIn delay-500">We have our own digital processing laboratory on site which caters for all of our production needs, in particular any special packages such as sepia, black &amp; white or pictures with digitally produced frames and borders.</p>
+                           <button type="button" class="btn btn-primary" data-dest=".slide-three-expand" data-dest-idname="#schoolphotography-expand">Learn More...</button>
                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="slide slide-four" id="idservices" data-idname="idservices">
+        <section class="slide-three-expand hidden expand" data-idname='schoolphotography-expand'>
+            
+        </section>
+        <section class="slide slide-four" data-idname="idservices">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
@@ -82,7 +90,7 @@
                 </div>
             </div>
         </section>
-        <section class="slide slide-five" id="contact" data-idname="contact">
+        <section class="slide slide-five" data-idname="contact">
             <div class="container-fluid">
                 <div class="row">
                     
@@ -108,7 +116,8 @@
         <script src="css3-animate-it.js"></script>
         
         <!-- Scrollify -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.js"></script>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.js"></script>-->
+        <script src="jquery.scrollify.js"></script>
         
         <!-- Custom scripts -->
         <script src="scripts.js"></script>
