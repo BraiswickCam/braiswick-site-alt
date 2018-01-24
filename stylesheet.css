@@ -12,6 +12,10 @@
     margin: 0px;
 }*/
 
+body {
+    font-size: 16px;
+}
+
 .loader-container {
     position: fixed;
     width: 100%;
@@ -100,29 +104,29 @@ p {
     background-size: cover;
 }
 
+.content {
+    margin-top: 200px;
+    margin-left: 50px;
+}
+
 *.slide-one {
     color: white;
 }
 
 .slide-one p {
-    font-size: 2.5rem;
+    font-size: 120%;
 }
 
 *.slide-two {
     
 }
 
-.content {
-    margin-top: 200px;
-    margin-left: 50px;
-}
-
 .content h1 {
-    font-size: 5vw;
+    font-size: 350%;
 }
 
 .content p {
-    font-size: 1.5vw;
+    font-size: 150%;
     padding: 20px;
 }
 
@@ -132,4 +136,27 @@ p {
 
 .container {
     background-color: white;
+}
+
+@media only screen and (max-width: 991px) {
+    .content {
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    
+    .slide-one {
+        background: url(bg_img/draft1_mobile.jpg) no-repeat center bottom;
+    }
+    
+    .slide-two {
+        background: url(bg_img/draft4_mobile.jpg) no-repeat center bottom;
+    }
+    
+    .content h1 {
+        font-size: 200%;
+    }
+    
+    .content p {
+        font-size: 100%;
+    }
 }
