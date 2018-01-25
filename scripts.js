@@ -31,6 +31,7 @@ function resizeMobileRows() {
     $('#schoolphotography_b').height($('.slide-three').height() - $('#schoolphotography_a').height());
     $('#about_b').height($('.slide-two').height() - $('#about_a').height());
     $('#intro_b').height($('.slide-one').height() - $('#intro_a').height());
+    $('#idservices_b').height($('.slide-four').height() - $('#idservices_a').height());
 }
 
 $(document).ready(function (){      

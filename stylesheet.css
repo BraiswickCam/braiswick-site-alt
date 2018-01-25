@@ -198,6 +198,16 @@ p {
         background-size: cover;
     }
     
+    #idservices_a {
+        background-color: white;
+    }
+    
+    #idservices_b {
+        background-color: white;
+        background: url(bg_img/draft2_mobile_b.jpg) no-repeat center bottom;
+        background-size: cover;
+    }
+    
     .content h1 {
         font-size: 200%;
     }
