@@ -152,6 +152,10 @@ p {
         background: url(bg_img/draft4_mobile.jpg) no-repeat center bottom;
     }
     
+    .slide-three {
+        background: url(bg_img/draft3_mobile.jpg) no-repeat center bottom;
+    }
+    
     .content h1 {
         font-size: 200%;
     }
