@@ -15,7 +15,7 @@ $.scrollify({
     touchScroll:true,
     before:function() {},
     after:function() {console.log($.scrollify.current());},
-    afterResize: function() {},
+    afterResize: function() {resizeMobileRows();},
     afterRender: function() {},
     afterUpdate: function() {onSectionExpand(sectionMove);}
   });
