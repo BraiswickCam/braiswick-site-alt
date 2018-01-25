@@ -156,6 +156,48 @@ p {
         background: url(bg_img/draft3_mobile.jpg) no-repeat center bottom;
     }
     
+    #schoolphotography_a {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8ebfe5+0,b5d0e6+100 */
+        background: rgb(142,191,229); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(142,191,229,1) 0%, rgba(181,208,230,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(142,191,229,1) 0%,rgba(181,208,230,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(142,191,229,1) 0%,rgba(181,208,230,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8ebfe5', endColorstr='#b5d0e6',GradientType=0 ); /* IE6-9 */
+    }
+    
+    #schoolphotography_b {
+        background: url(bg_img/draft3_mobile_b.jpg) no-repeat center bottom;
+        background-size: cover;
+    }
+    
+    #about_a {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5c316+0,f9df56+100 */
+        background: rgb(229,195,22); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(229,195,22,1) 0%, rgba(249,223,86,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(229,195,22,1) 0%,rgba(249,223,86,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(229,195,22,1) 0%,rgba(249,223,86,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5c316', endColorstr='#f9df56',GradientType=0 ); /* IE6-9 */
+    }
+    
+    #about_b {
+        background: url(bg_img/draft4_mobile_b.jpg) no-repeat center bottom;
+        background-size: cover;
+    }
+    
+    #intro_a {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#84000d+0,871d29+100 */
+        background: rgb(132,0,13); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(132,0,13,1) 0%, rgba(135,29,41,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(132,0,13,1) 0%,rgba(135,29,41,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(132,0,13,1) 0%,rgba(135,29,41,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#84000d', endColorstr='#871d29',GradientType=0 ); /* IE6-9 */
+    }
+    
+    #intro_b {
+        background: url(bg_img/draft1_mobile_b.jpg) no-repeat center bottom;
+        background-size: cover;
+    }
+    
     .content h1 {
         font-size: 200%;
     }

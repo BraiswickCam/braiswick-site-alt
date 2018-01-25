@@ -27,7 +27,15 @@ function onSectionExpand(destination) {
         }
 }
 
+function resizeMobileRows() {
+    $('#schoolphotography_b').height($('.slide-three').height() - $('#schoolphotography_a').height());
+    $('#about_b').height($('.slide-two').height() - $('#about_a').height());
+    $('#intro_b').height($('.slide-one').height() - $('#intro_a').height());
+}
+
 $(document).ready(function (){      
+
+    resizeMobileRows();
 
     $('.loader-container').fadeOut('slow');
 
