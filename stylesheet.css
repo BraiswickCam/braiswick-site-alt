@@ -141,6 +141,22 @@ p {
     background-color: white;
 }
 
+#intro_b {
+    display: none;
+}
+
+#about_b {
+    display: none;
+}
+
+#schoolphotography_b {
+    display: none;
+}
+
+#idservices_b {
+    display: none;
+}
+
 @media only screen and (max-width: 991px) {
     .content {
         margin-top: 20px;
@@ -171,6 +187,7 @@ p {
     #schoolphotography_b {
         background: url(bg_img/draft3_mobile_b.jpg) no-repeat center bottom;
         background-size: cover;
+        display: block;
     }
     
     #about_a {
@@ -185,6 +202,7 @@ p {
     #about_b {
         background: url(bg_img/draft4_mobile_b.jpg) no-repeat center bottom;
         background-size: cover;
+        display: block;
     }
     
     #intro_a {
@@ -199,6 +217,7 @@ p {
     #intro_b {
         background: url(bg_img/draft1_mobile_b.jpg) no-repeat center bottom;
         background-size: cover;
+        display: block;
     }
     
     #idservices_a {
@@ -209,6 +228,7 @@ p {
         background-color: white;
         background: url(bg_img/draft2_mobile_b.jpg) no-repeat center bottom;
         background-size: cover;
+        display: block;
     }
     
     .content h1 {

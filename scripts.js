@@ -28,10 +28,21 @@ function onSectionExpand(destination) {
 }
 
 function resizeMobileRows() {
-    $('#schoolphotography_b').height($('.slide-three').height() - $('#schoolphotography_a').height());
-    $('#about_b').height($('.slide-two').height() - $('#about_a').height());
-    $('#intro_b').height($('.slide-one').height() - $('#intro_a').height());
-    $('#idservices_b').height($('.slide-four').height() - $('#idservices_a').height());
+    if ($("div[id$='_b']").is(':visible')) {
+        $('#schoolphotography_b').height($('.slide-three').height() - $('#schoolphotography_a').height());
+        $('#about_b').height($('.slide-two').height() - $('#about_a').height());
+        $('#intro_b').height($('.slide-one').height() - $('#intro_a').height());
+        $('#idservices_b').height($('.slide-four').height() - $('#idservices_a').height());
+    } else {
+        $("div[id$='_b']").height(0);
+        $("div[id$='_a']").height($('.slide-one').height());
+        $('.content').each(function(){
+            var contentHeight = $(this).height();
+            var parentHeight = $('.slide-one').height();
+            var calcTopMargin = (parentHeight - contentHeight) / 2;
+            $(this).css('margin-top', calcTopMargin);
+        });
+    }
 }
 
 $(document).ready(function (){      
