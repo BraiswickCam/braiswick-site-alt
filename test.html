@@ -45,7 +45,27 @@
                 </div>
                 <div class="row">
                     <div class="col-md-5 col-md-offset-6 text-center">
-                        <p class="animate-bob"><span class="glyphicon glyphicon-chevron-down"></span> Scroll for more information <span class="glyphicon glyphicon-chevron-down"></span></p>
+                        <!--<p class="animate-bob"><span class="glyphicon glyphicon-chevron-down"></span> Scroll for more information <span class="glyphicon glyphicon-chevron-down"></span></p>-->
+                        <!-- MD+ Navigation -->
+                        <div class="btn-group hidden-xs hidden-sm" role="group">
+                            <button type="button" class="btn btn-primary top-nav-btn" data-id-target="#about">About Us</button>
+                            <button type="button" class="btn btn-primary top-nav-btn" data-id-target="#schoolphotography">School Photography</button>
+                            <button type="button" class="btn btn-primary top-nav-btn" data-id-target="#idservices">ID Services</button>
+                            <button type="button" class="btn btn-primary top-nav-btn" data-id-target="#contact">Contact Us</button>
+                        </div>
+                        
+                        <!-- XS/SM Navigation -->
+                        <div class="btn-group hidden-md hidden-lg hidden-xl">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Learn More... <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="" class="top-nav-btn" data-id-target="#about">About Us</a></li>
+                                <li><a href="" class="top-nav-btn" data-id-target="#schoolphotography">School Photography</a></li>
+                                <li><a href="" class="top-nav-btn" data-id-target="#idservices">ID Services</a></li>
+                                <li><a href="" class="top-nav-btn" data-id-target="#contact">Contact Us</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                    </div>
@@ -62,7 +82,7 @@
                        <div class="content text-center animatedParent">
                            <h1 class="animated fadeIn">About us...</h1>
                            <p class="text-center animated fadeIn delay-500">Braiswick Photographic was established in <strong>1965</strong> operating from Colchester, Essex. Virtually all of our work is within the school environment, ranging from pre-school and toddler groups through to sixth form colleges.</p>
-                           <button type="button" class="btn btn-primary animated fadeIn delay-1000" data-dest=".slide-two-expand" data-dest-idname="#about-expand">Learn More...</button>
+                           <button type="button" class="btn btn-primary animated fadeIn delay-1000 expanding" data-dest=".slide-two-expand" data-dest-idname="#about-expand">Learn More...</button>
                        </div>
                     </div>
                 </div>
@@ -83,7 +103,7 @@
                        <div class="content text-center animatedParent">
                            <h1 class="animated fadeIn">School Photography</h1>
                            <p class="text-center animated fadeIn delay-500">We have our own digital processing laboratory on site which caters for all of our production needs, in particular any special packages such as sepia, black &amp; white or pictures with digitally produced frames and borders.</p>
-                           <button type="button" class="btn btn-primary animated fadeIn delay-1000" data-dest=".slide-three-expand" data-dest-idname="#schoolphotography-expand">Learn More...</button>
+                           <button type="button" class="btn btn-primary animated fadeIn delay-1000 expanding" data-dest=".slide-three-expand" data-dest-idname="#schoolphotography-expand">Learn More...</button>
                        </div>
                     </div>
                 </div>
@@ -106,7 +126,7 @@
                         <div class="content text-center animatedParent">
                             <h1 class="animated fadeIn">ID Services</h1>
                             <p class="text-center animated fadeIn delay-500">We provide Proof of Age and Security ID Cards for school and business use. Proof of Age Cards are provided in conjunction with various Trading Standards Departments for 16+ students.</p>
-                            <button type="button" class="btn btn-primary animated fadeIn delay-1000" data-dest=".slide-four-expand" data-dest-idname="#idservices-expand">Learn More...</button>
+                            <button type="button" class="btn btn-primary animated fadeIn delay-1000 expanding" data-dest=".slide-four-expand" data-dest-idname="#idservices-expand">Learn More...</button>
                         </div>
                     </div>
                 </div>
