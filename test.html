@@ -18,6 +18,8 @@
         <!-- JQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
         
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Buttons/2.0.0/css/buttons.css" type="text/css">
+        
     </head>
     <body>
       
@@ -47,25 +49,25 @@
                     <div class="col-md-5 col-md-offset-6 text-center">
                         <!--<p class="animate-bob"><span class="glyphicon glyphicon-chevron-down"></span> Scroll for more information <span class="glyphicon glyphicon-chevron-down"></span></p>-->
                         <!-- MD+ Navigation -->
-                        <div class="btn-group hidden-xs hidden-sm" role="group">
-                            <button type="button" class="btn btn-primary top-nav-btn" data-id-target="#about">About Us</button>
-                            <button type="button" class="btn btn-primary top-nav-btn" data-id-target="#schoolphotography">School Photography</button>
-                            <button type="button" class="btn btn-primary top-nav-btn" data-id-target="#idservices">ID Services</button>
-                            <button type="button" class="btn btn-primary top-nav-btn" data-id-target="#contact">Contact Us</button>
+                        <div class="button-group hidden-xs hidden-sm" role="group">
+                            <button type="button" class="button button-glow button-rounded button-raised button-caution top-nav-btn" data-id-target="#about">About Us</button>
+                            <button type="button" class="button button-glow button-rounded button-raised button-caution top-nav-btn" data-id-target="#schoolphotography">School Photography</button>
+                            <button type="button" class="button button-glow button-rounded button-raised button-caution top-nav-btn" data-id-target="#idservices">ID Services</button>
+                            <button type="button" class="button button-glow button-rounded button-raised button-caution top-nav-btn" data-id-target="#contact">Contact Us</button>
                         </div>
                         
                         <!-- XS/SM Navigation -->
-                        <div class="btn-group hidden-md hidden-lg hidden-xl">
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="button-dropdown hidden-md hidden-lg hidden-xl" data-buttons="dropdown">
+                            <button type="button" class="button button-glow button-raised button-caution button-rounded">
                                 Learn More... <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu">
+                            <ul class="button-dropdown-list">
                                 <li><a href="" class="top-nav-btn" data-id-target="#about">About Us</a></li>
-                                <li><a href="" class="top-nav-btn" data-id-target="#schoolphotography">School Photography</a></li>
-                                <li><a href="" class="top-nav-btn" data-id-target="#idservices">ID Services</a></li>
-                                <li><a href="" class="top-nav-btn" data-id-target="#contact">Contact Us</a></li>
+                                <li><a href="" class="top-nav-btn button-dropdown-divider" data-id-target="#schoolphotography">School Photography</a></li>
+                                <li><a href="" class="top-nav-btn button-dropdown-divider" data-id-target="#idservices">ID Services</a></li>
+                                <li><a href="" class="top-nav-btn button-dropdown-divider" data-id-target="#contact">Contact Us</a></li>
                             </ul>
-                        </div>
+                        </span>
                     </div>
                 </div>
                    </div>
@@ -175,6 +177,8 @@
         
         <!-- Custom scripts -->
         <script src="scripts.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Buttons/2.0.0/js/buttons.js"></script>
         
         <!-- END JS FILES -->
 
