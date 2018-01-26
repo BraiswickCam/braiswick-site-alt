@@ -104,6 +104,10 @@ p {
     background-size: cover;
 }
 
+.slide-five {
+    background: url(bg_img/BraiswickSketchBGColoured.jpg) no-repeat center center;
+}
+
 .content {
     margin-top: 200px;
     margin-left: 50px;
