@@ -1,5 +1,7 @@
+//Holder for next section to move to.
 var sectionMove = "";
 
+//Initiate Scrollify for section locking and smooth scrolling
 $.scrollify({
     section : ".slide",
     sectionName: "idname",
@@ -15,11 +17,15 @@ $.scrollify({
     touchScroll:true,
     before:function() {},
     after:function() {console.log($.scrollify.current());},
-    afterResize: function() {resizeMobileRows();},
+    afterResize: function() {resizeRows();},
     afterRender: function() {},
     afterUpdate: function() {onSectionExpand(sectionMove);}
   });
 
+/**
+ * Scrolls the page to the new expanded section. Call after scrollify update to avoid index errors.
+ * @param {string} destination - Target section to scroll to.
+ */
 function onSectionExpand(destination) {
     if (destination != "") {
             $.scrollify.move(destination);
@@ -27,7 +33,12 @@ function onSectionExpand(destination) {
         }
 }
 
-function resizeMobileRows() {
+/**
+ * Resizes section rows. On mobile, will show all '_b' sections and resize to avoid text overlay.
+ * On desktop, will set the height of '_b' sections to 0px and center each '_a' sections '.content' vertically.
+ * Relies on CSS hiding/showing '_b' sections
+ */
+function resizeRows() {
     if ($("div[id$='_b']").is(':visible')) {
         $('#schoolphotography_b').height($('.slide-three').height() - $('#schoolphotography_a').height());
         $('#about_b').height($('.slide-two').height() - $('#about_a').height());
@@ -47,18 +58,12 @@ function resizeMobileRows() {
 
 $(document).ready(function (){      
 
-    resizeMobileRows();
+    resizeRows();
 
+    //Hide loading screen once page is ready
     $('.loader-container').fadeOut('slow');
 
-    /*$(document).on('click', 'a[href^="#"]', function(e){
-        var id = $(this).attr('href');
-        if ($(id).length > 0) {
-            e.preventDefault();
-            controller.scrollTo(id);
-        }
-    });*/
-    
+    //Gives section buttons ability to open their expanded section.
     $('button.expanding').on('click', function() {
         $('.expand').each(function() {
             $(this).removeClass('slide');
@@ -74,10 +79,7 @@ $(document).ready(function (){
         sectionMove = destIdName;
     });
 
-    $('button.top-nav-btn').on('click', function() {
-        $.scrollify.move($(this).attr('data-id-target'));
-    });
-
+    //Overrides nav links to use scrollify's move function for smooth scrolling
     $('a.top-nav-btn').on('click', function(e) {
         e.preventDefault();
         $.scrollify.move($(this).attr('data-id-target'));
