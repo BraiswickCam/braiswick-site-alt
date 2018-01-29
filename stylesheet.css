@@ -163,6 +163,33 @@ p {
     margin: 0 auto;
 }
 
+.contact-list {
+    list-style: none;
+}
+
+.contact-list-icon {
+    padding-top: 10px;
+}
+
+.contact-list-icon::before {
+    font-family: 'Glyphicons Halflings';
+    float: left;
+    margin-top: 0px;
+    margin-left: -22px;
+}
+
+.icon-email::before {
+    content: "\2709";
+}
+
+.icon-phone::before {
+    content: "\e182";
+}
+
+.icon-address::before {
+    content: "\e062";
+}
+
 @media only screen and (max-width: 991px) {
     .content {
         margin-top: 20px;
