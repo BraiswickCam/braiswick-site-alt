@@ -56,6 +56,26 @@ function resizeRows() {
     }
 }
 
+/**
+ * Initiate google map.
+ * @param {number} latitude Latitude of location marker
+ * @param {number} longtitude Longtitude of location marker
+ * @param {string} elementId Target div to assign map element to
+ * @param {number} zoomLevel Zoom level (default = 17)
+ */
+function initMap(latitude, longtitude, elementId, zoomLevel = 17) {
+    var uluru = {lat: latitude, lng: longtitude};
+    var map = new google.maps.Map(document.getElementById(elementId), {
+      zoom: zoomLevel,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+
+
 $(document).ready(function (){      
 
     resizeRows();
@@ -84,4 +104,8 @@ $(document).ready(function (){
         e.preventDefault();
         $.scrollify.move($(this).attr('data-id-target'));
     });
+
+    initMap(51.9588432, 1.0582637, 'mapManningtree');
+
+    initMap(53.0679812, -1.2519532, 'mapMansfield', 18);
 });

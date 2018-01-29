@@ -157,6 +157,12 @@ p {
     display: none;
 }
 
+.map {
+    height: 300px;
+    width: 500px;
+    margin: 0 auto;
+}
+
 @media only screen and (max-width: 991px) {
     .content {
         margin-top: 20px;

@@ -137,9 +137,19 @@
         <section class="slide slide-five" data-idname="contact">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-6 col-md-offset-6">
+                    <div class="col-md-12">
                         <div class="content text-center animatedParent">
                             <h1 class="animated fadeIn">Contact Us</h1>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6 text-center">
+                                    <h2 class="animated fadeIn delay-250">Manningtree</h2>
+                                    <div id="mapManningtree" class="map animated fadeIn delay-500"></div>
+                                </div>
+                                <div class="col-xs-12 col-md-6 text-center">
+                                    <h2 class="animated fadeIn delay-250">Mansfield</h2>
+                                    <div id="mapMansfield" class="map animated fadeIn delay-500"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -167,6 +177,8 @@
         <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.js"></script>-->
         <script src="jquery.scrollify.js"></script>
         
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCX396C0gzvGQbQQys26-vM8xVdkuinAcQ&callback=initMap"></script>
+
         <!-- Custom scripts -->
         <script src="scripts.js"></script>
         
