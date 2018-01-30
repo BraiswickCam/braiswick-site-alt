@@ -271,4 +271,8 @@ p {
     .content p {
         font-size: 100%;
     }
+    
+    .map {
+        width: 90vw;
+    }
 }
