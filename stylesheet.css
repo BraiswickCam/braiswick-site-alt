@@ -130,13 +130,13 @@ p {
     margin-top: 200px;
 }
 
-.container.expand-content {
+.container-fluid.expand-content {
     background-color: transparent;
-    height: 100vh; /* REMOVE */
+    /* height: 100vh; /* REMOVE */
 }
 
 .img-container {
-    width: 80%;
+    width: 90%;
     height: auto;
     margin: 0 auto;
 }
@@ -162,8 +162,8 @@ p {
     padding: 10px;
 }
 
-.container.expand-content div.row:first-child {
-    margin-top: 50px;
+.container-fluid.expand-content div.row:first-child div.row:first-child {
+    margin-top: 20px;
 }
 
 *.slide-one {
