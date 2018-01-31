@@ -162,10 +162,6 @@ p {
     padding: 10px;
 }
 
-.container-fluid.expand-content div.row:first-child div.row:first-child {
-    margin-top: 20px;
-}
-
 *.slide-one {
     color: white;
 }
