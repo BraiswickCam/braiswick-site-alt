@@ -1,6 +1,3 @@
-//Holder for next section to move to.
-var sectionMove = "";
-
 //Initiate Scrollify for section locking and smooth scrolling
 $.scrollify({
     section : ".slide",
