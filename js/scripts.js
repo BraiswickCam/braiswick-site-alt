@@ -22,17 +22,6 @@ $.scrollify({
   });
 
 /**
- * Scrolls the page to the new expanded section. Call after scrollify update to avoid index errors.
- * @param {string} destination - Target section to scroll to.
- */
-function onSectionExpand(destination) {
-    if (destination != "") {
-            $.scrollify.move(destination);
-            sectionMove = "";
-        }
-}
-
-/**
  * Resizes section rows. On mobile, will show all '_b' sections and resize to avoid text overlay.
  * On desktop, will set the height of '_b' sections to 0px and center each '_a' sections '.content' vertically.
  * Relies on CSS hiding/showing '_b' sections
