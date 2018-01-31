@@ -18,8 +18,7 @@ $.scrollify({
     before:function() {},
     after:function() {console.log($.scrollify.current());},
     afterResize: function() {resizeRows();},
-    afterRender: function() {},
-    afterUpdate: function() {onSectionExpand(sectionMove);}
+    afterRender: function() {}
   });
 
 /**
@@ -85,18 +84,29 @@ $(document).ready(function (){
 
     //Gives section buttons ability to open their expanded section.
     $('button.expanding').on('click', function() {
-        $('.expand').each(function() {
-            $(this).removeClass('slide');
-            $(this).addClass('hidden');
-        });
-        var dest = $(this).attr('data-dest');
-        console.log(dest);
-        var destIdName = $(this).attr('data-dest-idname');
-        console.log(destIdName);
-        $(dest).removeClass('hidden');
-        $(dest).addClass('slide');
+        var thisSection = $(this);
+        var currentSection = $.scrollify.current();
+        var destIdName = '';
+        var dest = '';
+        window.setTimeout(function() {
+            $('.expand').each(function() {
+                $(this).removeClass('slide');
+                $(this).addClass('hidden');
+            });
+            dest = thisSection.attr('data-dest');
+            console.log(dest);
+            destIdName = thisSection.attr('data-dest-idname');
+            console.log(destIdName);
+            $(dest).removeClass('hidden');
+            $(dest).addClass('slide');
+        }, 399);
         $.scrollify.update();
-        sectionMove = destIdName;
+        window.setTimeout(function(){
+            $.scrollify.instantMove('#' + currentSection.attr('data-idname'));
+        }, 401);
+        window.setTimeout(function(){
+            $.scrollify.move(destIdName);
+        }, 402);
     });
 
     //Overrides nav links to use scrollify's move function for smooth scrolling
