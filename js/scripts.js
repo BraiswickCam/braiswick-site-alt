@@ -85,6 +85,7 @@ $(document).ready(function (){
             console.log(destIdName);
             $(dest).removeClass('hidden');
             $(dest).addClass('slide');
+            resizeRows();
         }, 399);
         $.scrollify.update();
         window.setTimeout(function(){

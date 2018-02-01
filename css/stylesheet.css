@@ -122,12 +122,23 @@ p {
     background-size: cover;
 }
 
+.slide-four-expand {
+    background: url(../images/idservices/id_bg_1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
 .slide-five {
     background: url(../bg_img/BraiswickSketchBGColoured.jpg) no-repeat center center;
 }
 
 .slide-five h1 {
     margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1025px) {
+    .slide-four-expand {
+        background-attachment: scroll;
+    }
 }
 
 .content {
