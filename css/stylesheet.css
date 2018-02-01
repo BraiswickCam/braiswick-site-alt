@@ -178,6 +178,11 @@ p {
     padding: 10px;
 }
 
+.slide-two-expand .content img {
+    width: 50%;
+    height: auto;
+}
+
 *.slide-one {
     color: white;
 }
