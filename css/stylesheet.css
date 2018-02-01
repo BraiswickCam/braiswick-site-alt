@@ -126,6 +126,10 @@ p {
     background: url(../bg_img/BraiswickSketchBGColoured.jpg) no-repeat center center;
 }
 
+.slide-five h1 {
+    margin-bottom: 30px;
+}
+
 .content {
     margin-top: 200px;
 }
@@ -210,7 +214,7 @@ p {
 .map {
     height: 300px;
     width: 500px;
-    margin: 0 auto;
+    float: right;
 }
 
 .contact-list {
