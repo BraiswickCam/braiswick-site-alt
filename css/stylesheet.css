@@ -122,6 +122,11 @@ p {
     background-size: cover;
 }
 
+.slide-four-expand {
+    background: url(../images/idservices/id_bg_1.jpg) no-repeat center center;
+    background-size: cover;
+}
+
 .slide-five {
     background: url(../bg_img/BraiswickSketchBGColoured.jpg) no-repeat center center;
 }
@@ -152,8 +157,8 @@ p {
 
 .img-container h2 {
     background-color: rgba(0,0,0,0.1);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    /*border-top-left-radius: 10px;
+    border-top-right-radius: 10px;*/
     margin-bottom: 0px;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -161,8 +166,8 @@ p {
 
 .img-container p {
     background-color: rgba(0,0,0,0.1);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    /*border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;*/
     padding: 10px;
 }
 
