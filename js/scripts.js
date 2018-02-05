@@ -24,21 +24,39 @@ $.scrollify({
  * Relies on CSS hiding/showing '_b' sections
  */
 function resizeRows() {
-    if ($("div[id$='_b']").is(':visible') && ($('.slide-one').height() - $('#intro_a').height()) > ($('.slide-one').height() / 2)) {
-        $('#schoolphotography_b').height($('.slide-three').height() - $('#schoolphotography_a').height());
-        $('#about_b').height($('.slide-two').height() - $('#about_a').height());
-        $('#intro_b').height($('.slide-one').height() - $('#intro_a').height());
-        $('#idservices_b').height($('.slide-four').height() - $('#idservices_a').height());
+    if ($("div[id$='_b']").is(':visible')) {
+        $('.slide').each(function(){
+            if ($(this).find('div[id$="_b"]').length > 0) {
+                var slide_a = $(this).find('div[id$="_a"]');
+                var slide_b = $(this).find('div[id$="_b"]');
+                if (($(this).height() - slide_a.height()) > ($(this).height() / 2)) {
+                    slide_b.height($(this).height() - slide_a.height());
+                } else {
+                    slide_b.height(0);
+                    slide_a.height($(this).height());
+                    centerContent($(this));
+                }
+            }
+        });
     } else {
         $("div[id$='_b']").height(0);
         $("div[id$='_a']").height($('.slide-one').height());
-        $('.content').each(function(){
-            var contentHeight = $(this).height();
-            var parentHeight = $('.slide-one').height();
-            var calcTopMargin = (parentHeight - contentHeight) / 2;
-            $(this).css('margin-top', calcTopMargin);
+        $('.slide').each(function(){
+            centerContent($(this));
         });
     }
+}
+
+/**
+ * Center content of a slide.
+ * @param {jQuery Object} slide Slide to center content within
+ */
+function centerContent(slide) {
+    var slideContent = slide.find('.content');
+    var contentHeight = slideContent.height();
+    var parentHeight = slide.height();
+    var calcTopMargin = (parentHeight - contentHeight) / 2;
+    slideContent.css('margin-top', calcTopMargin);
 }
 
 /**
