@@ -112,6 +112,14 @@ $(document).ready(function (){
             $.scrollify.move(destIdName);
         }, 402);
     });
+    
+    var resizeTimer;
+    $(window).resize(function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+            location.reload();
+        }, 100);
+    });
 
     //Overrides nav links to use scrollify's move function for smooth scrolling
     $('a.top-nav-btn').on('click', function(e) {
