@@ -101,6 +101,7 @@ $(document).ready(function (){
         $.scrollify.move($(this).attr('data-id-target'));
     });
 
+    //Hides all other FAQ collapse section when a new one is opened
     $('.collapse').on('show.bs.collapse', function() {
         var id = $(this).attr('id');
         $('div[id^="qu"]').each(function() {
@@ -110,6 +111,7 @@ $(document).ready(function (){
         });
     });
 
+    //Switches up/down chevron on active FAQ collapse shown
     $('.collapse').on('shown.bs.collapse', function() {
         var id = $(this).attr('id');
         var question = $('a[href="#' + id + '"] h3');
@@ -118,6 +120,7 @@ $(document).ready(function (){
         $.scrollify.update();
     });
 
+    //Switches up/down chevron on active FAQ collapse hidden
     $('.collapse').on('hidden.bs.collapse', function() {
         var id = $(this).attr('id');
         var question = $('a[href="#' + id + '"] h3');
@@ -126,7 +129,9 @@ $(document).ready(function (){
         $.scrollify.update();
     });
 
+    //Initiates Manningtree google map
     initMap(51.9588432, 1.0582637, 'mapManningtree');
 
+    //Initiates Mansfield google map
     initMap(53.0679812, -1.2519532, 'mapMansfield', 18);
 });
