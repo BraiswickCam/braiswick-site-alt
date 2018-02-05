@@ -24,7 +24,7 @@ $.scrollify({
  * Relies on CSS hiding/showing '_b' sections
  */
 function resizeRows() {
-    if ($("div[id$='_b']").is(':visible')) {
+    if ($("div[id$='_b']").is(':visible') && ($('.slide-one').height() - $('#intro_a').height()) > ($('.slide-one').height() / 2)) {
         $('#schoolphotography_b').height($('.slide-three').height() - $('#schoolphotography_a').height());
         $('#about_b').height($('.slide-two').height() - $('#about_a').height());
         $('#intro_b').height($('.slide-one').height() - $('#intro_a').height());
