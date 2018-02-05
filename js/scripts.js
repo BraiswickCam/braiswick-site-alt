@@ -101,6 +101,31 @@ $(document).ready(function (){
         $.scrollify.move($(this).attr('data-id-target'));
     });
 
+    $('.collapse').on('show.bs.collapse', function() {
+        var id = $(this).attr('id');
+        $('div[id^="qu"]').each(function() {
+            if ($(this).attr('id') != id) {
+                $(this).collapse('hide');
+            }
+        });
+    });
+
+    $('.collapse').on('shown.bs.collapse', function() {
+        var id = $(this).attr('id');
+        var question = $('a[href="#' + id + '"] h3');
+        question.removeClass('question-before');
+        question.addClass('question-after');
+        $.scrollify.update();
+    });
+
+    $('.collapse').on('hidden.bs.collapse', function() {
+        var id = $(this).attr('id');
+        var question = $('a[href="#' + id + '"] h3');
+        question.removeClass('question-after');
+        question.addClass('question-before');
+        $.scrollify.update();
+    });
+
     initMap(51.9588432, 1.0582637, 'mapManningtree');
 
     initMap(53.0679812, -1.2519532, 'mapMansfield', 18);

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Kalam');
 
 /*html {
     height: 100%;
@@ -183,7 +184,7 @@ p {
     
 }
 
-.content h1 {
+.content h1, .slide-fourfive h1 {
     font-size: 350%;
 }
 
@@ -247,6 +248,35 @@ p {
 
 .icon-address::before {
     content: "\e062";
+}
+
+.slide-fourfive a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.slide-fourfive h2:last-of-type {
+    margin-top: 50px;
+}
+
+.question::before {
+    content: "Q. ";
+    font-family: 'Kalam', cursive;
+}
+
+.question-before::after {
+    content: " \e114";
+    font-family: "Glyphicons Halflings";
+}
+
+.question-after::after {
+    content: " \e113";
+    font-family: "Glyphicons Halflings";
+}
+
+.answer::before {
+    content: "A. ";
+    font-family: 'Kalam', cursive;
 }
 
 @media only screen and (max-width: 991px) {
