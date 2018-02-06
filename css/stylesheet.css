@@ -250,12 +250,12 @@ p {
     content: "\e062";
 }
 
-.slide-fourfive a {
+.slide-fourfive div > a {
     text-decoration: none;
     color: inherit;
 }
 
-.slide-fourfive h2:last-of-type {
+.slide-fourfive h2:not(:first-child) {
     margin-top: 50px;
 }
 
