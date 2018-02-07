@@ -76,7 +76,37 @@ function initMap(latitude, longtitude, elementId, zoomLevel = 17) {
       position: uluru,
       map: map
     });
-  }
+}
+
+/**
+ * Switch chevron icons when shown or hidden. Used in FAQ section
+ * @param {event} e Event object (e.currentTarget === $(this))
+ */
+function switchChevron(e) {
+    var id = $(e.currentTarget).attr('id');
+    var question = $('a[href="#' + id + '"] h3');
+    if (e.type == 'shown') {
+        question.removeClass('question-before');
+        question.addClass('question-after');
+    } else if (e.type == 'hidden') {
+        question.removeClass('question-after');
+        question.addClass('question-before');
+    }
+    $.scrollify.update();
+}
+
+/**
+ * Hides all other FAQ collapse sections when a new one is opened
+ * @param {event} e Event object (e.currentTarget === $(this))
+ */
+function hideOtherCollapses(e) {
+    var id = $(e.currentTarget).attr('id');
+    $('div[id^="qu"]').each(function() {
+        if ($(this).attr('id') != id) {
+            $(this).collapse('hide');
+        }
+    });
+}
 
 
 $(document).ready(function (){      
@@ -129,32 +159,10 @@ $(document).ready(function (){
     });
 
     //Hides all other FAQ collapse section when a new one is opened
-    $('.collapse').on('show.bs.collapse', function() {
-        var id = $(this).attr('id');
-        $('div[id^="qu"]').each(function() {
-            if ($(this).attr('id') != id) {
-                $(this).collapse('hide');
-            }
-        });
-    });
+    $('.collapse').on('show.bs.collapse', hideOtherCollapses);
 
     //Switches up/down chevron on active FAQ collapse shown
-    $('.collapse').on('shown.bs.collapse', function() {
-        var id = $(this).attr('id');
-        var question = $('a[href="#' + id + '"] h3');
-        question.removeClass('question-before');
-        question.addClass('question-after');
-        $.scrollify.update();
-    });
-
-    //Switches up/down chevron on active FAQ collapse hidden
-    $('.collapse').on('hidden.bs.collapse', function() {
-        var id = $(this).attr('id');
-        var question = $('a[href="#' + id + '"] h3');
-        question.removeClass('question-after');
-        question.addClass('question-before');
-        $.scrollify.update();
-    });
+    $('.collapse').on('shown.bs.collapse hidden.bs.collapse', switchChevron);
 
     //Initiates Manningtree google map
     initMap(51.9588432, 1.0582637, 'mapManningtree');
