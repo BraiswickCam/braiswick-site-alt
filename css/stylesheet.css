@@ -260,8 +260,9 @@ p {
 }
 
 .question::before {
-    content: "Q. ";
+    content: "Q.";
     font-family: 'Kalam', cursive;
+    margin-right: 10px;
 }
 
 .question-before::after {
@@ -277,8 +278,9 @@ p {
 }
 
 .answer::before {
-    content: "A. ";
+    content: "A.";
     font-family: 'Kalam', cursive;
+    margin-right: 10px;
 }
 
 @media only screen and (max-width: 991px) {
