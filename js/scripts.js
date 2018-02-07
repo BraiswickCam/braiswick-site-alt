@@ -109,12 +109,12 @@ function hideOtherCollapses(e) {
 }
 
 /**
- * Overrides navigation anchor elements to use scrollify.move(). Anchor element must have data-id-target. 
+ * Overrides navigation anchor elements to use scrollify.move() to elements href value
  * @param {event} e Event object
  */
 function navlinkOverride(e) {
     e.preventDefault();
-    $.scrollify.move($(e.currentTarget).attr('data-id-target'));
+    $.scrollify.move($(e.currentTarget).attr('href'));
 }
 
 
