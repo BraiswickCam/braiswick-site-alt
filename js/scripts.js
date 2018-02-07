@@ -158,11 +158,12 @@ $(document).ready(function (){
         $.scrollify.move($(this).attr('data-id-target'));
     });
 
-    //Hides all other FAQ collapse section when a new one is opened
-    $('.collapse').on('show.bs.collapse', hideOtherCollapses);
-
-    //Switches up/down chevron on active FAQ collapse shown
-    $('.collapse').on('shown.bs.collapse hidden.bs.collapse', switchChevron);
+    $('.collapse').on(
+        {
+            'shown.bs.collapse': switchChevron,
+            'hidden.bs.collapse': switchChevron,
+            'show.bs.collapse': hideOtherCollapses
+        });
 
     //Initiates Manningtree google map
     initMap(51.9588432, 1.0582637, 'mapManningtree');
