@@ -79,23 +79,6 @@ function initMap(latitude, longtitude, elementId, zoomLevel = 17) {
 }
 
 /**
- * Switch chevron icons when shown or hidden. Used in FAQ section
- * @param {event} e Event object (e.currentTarget === $(this))
- */
-function switchChevron(e) {
-    var id = $(e.currentTarget).attr('id');
-    var question = $('a[href="#' + id + '"] h3');
-    if (e.type == 'shown') {
-        question.removeClass('question-before');
-        question.addClass('question-after');
-    } else if (e.type == 'hidden') {
-        question.removeClass('question-after');
-        question.addClass('question-before');
-    }
-    $.scrollify.update();
-}
-
-/**
  * Hides all other FAQ collapse sections when a new one is opened
  * @param {event} e Event object (e.currentTarget === $(this))
  */
@@ -164,12 +147,7 @@ $(document).ready(function (){
     //Overrides nav links to use scrollify's move function for smooth scrolling
     $('a.top-nav-btn').on('click', navlinkOverride);
 
-    $('.collapse').on(
-        {
-            'shown.bs.collapse': switchChevron,
-            'hidden.bs.collapse': switchChevron,
-            'show.bs.collapse': hideOtherCollapses
-        });
+    $('.collapse').on('show.bs.collapse', hideOtherCollapses);
 
     //Initiates Manningtree google map
     initMap(51.9588432, 1.0582637, 'mapManningtree');
