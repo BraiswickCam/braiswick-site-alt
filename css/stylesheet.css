@@ -265,16 +265,13 @@ p {
     margin-right: 10px;
 }
 
-.question-before::after {
-    content: "\e114";
-    font-family: "Glyphicons Halflings";
+.question-anchor span.glyphicon {
+    transition: 0.3s transform ease-in-out;
     margin-left: 10px;
 }
 
-.question-after::after {
-    content: "\e113";
-    font-family: "Glyphicons Halflings";
-    margin-left: 10px;
+.question-anchor.collapsed span.glyphicon {
+    transform: rotate(180deg);
 }
 
 .answer::before {
