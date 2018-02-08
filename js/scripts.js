@@ -45,6 +45,7 @@ function resizeRows() {
             centerContent($(this));
         });
     }
+    setNavDirection();
 }
 
 /**
@@ -98,6 +99,17 @@ function hideOtherCollapses(e) {
 function navlinkOverride(e) {
     e.preventDefault();
     $.scrollify.move($(e.currentTarget).attr('href'));
+}
+
+/**
+ * Sets the nav links to either dropdown or dropup, depending on available space
+ */
+function setNavDirection() {
+    if (($('.slide-one').height() - $('#intro-main').height()) < 256) {
+        $('ul.button-dropdown-list').css({'top': 'auto', 'bottom': '0'});
+    } else {
+        $('ul.button-dropdown-list').css({'top': '0', 'bottom': 'auto'});
+    }
 }
 
 
