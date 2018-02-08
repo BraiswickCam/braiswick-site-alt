@@ -147,7 +147,12 @@ $(document).ready(function (){
     //Overrides nav links to use scrollify's move function for smooth scrolling
     $('a.top-nav-btn').on('click', navlinkOverride);
 
-    $('.collapse').on('show.bs.collapse', hideOtherCollapses);
+    $('.collapse').on(
+        {
+            'shown.bs.collapse': $.scrollify.update,
+            'hidden.bs.collapse': $.scrollify.update,
+            'show.bs.collapse': hideOtherCollapses
+        });
 
     //Initiates Manningtree google map
     initMap(51.9588432, 1.0582637, 'mapManningtree');

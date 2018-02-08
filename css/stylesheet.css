@@ -280,6 +280,20 @@ p {
     margin-right: 10px;
 }
 
+.collapse-parent > a:not(:first-child)::before {
+    content: "";
+    border-top: 2px lightgray solid;
+    border-radius: 100%;
+    width: 98%;
+    height: 0;
+    margin: 0 auto;
+    display: block;
+}
+
+.collapse-parent > a > h3 {
+    margin-top: 10px;
+}
+
 @media only screen and (max-width: 991px) {
     .content {
         margin-top: 20px;
