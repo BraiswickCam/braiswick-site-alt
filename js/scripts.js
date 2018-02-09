@@ -65,7 +65,7 @@ function centerContent(slide) {
  * @param {number} latitude Latitude of location marker
  * @param {number} longtitude Longtitude of location marker
  * @param {string} elementId Target div to assign map element to
- * @param {number} zoomLevel Zoom level (default = 17)
+ * @param {number} zoomLevel Zoom level 
  */
 function initMap(latitude, longtitude, elementId, zoomLevel) {
     var uluru = {lat: latitude, lng: longtitude};
