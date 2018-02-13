@@ -302,8 +302,9 @@ p {
 }
 
 .img-flex-divider {
-    border-top: 2px white solid;
+    border-top: 2px solid rgba(255,255,255,0.6);
     border-radius: 100%;
+    background-clip: padding-box;
     width: 80%;
     height: 0;
     margin: 0 auto;
@@ -334,15 +335,6 @@ div.img-flex:nth-of-type(even) {
         flex-direction: row;
         margin-top: 30px;
         margin-bottom: 30px;
-    }
-
-    .img-flex-divider {
-        border-top: 2px white solid;
-        border-radius: 100%;
-        width: 80%;
-        height: 0;
-        margin: 0 auto;
-        display: block;
     }
 
     div.img-flex:nth-of-type(even) {
@@ -376,15 +368,6 @@ div.img-flex:nth-of-type(even) {
         flex-direction: row;
         margin-top: 30px;
         margin-bottom: 30px;
-    }
-
-    .img-flex-divider {
-        border-top: 2px white solid;
-        border-radius: 100%;
-        width: 80%;
-        height: 0;
-        margin: 0 auto;
-        display: block;
     }
 
     div.img-flex:nth-of-type(even) {
