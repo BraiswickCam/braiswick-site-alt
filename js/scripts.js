@@ -166,6 +166,18 @@ $(document).ready(function (){
             'show.bs.collapse': hideOtherCollapses
         });
 
+    $(window).on('scroll', function(){
+        if ($(this).scrollTop() >= 50) {
+            $('#returntotop').fadeIn(200);
+        } else {
+            $('#returntotop').fadeOut(200);
+        }
+    });
+
+    $('#returntotop').on('click', function(){
+        $.scrollify.move('#intro');
+    });
+
     //Initiates Manningtree google map
     initMap(51.9588432, 1.0582637, 'mapManningtree', 17);
 
