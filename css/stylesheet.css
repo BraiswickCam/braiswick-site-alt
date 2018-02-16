@@ -320,6 +320,7 @@ div.img-flex:nth-of-type(even) {
     width: 90%;
     height: auto;
     align-self: center;
+    flex-shrink: 0;
 }
 
 .img-flex .img-flex-text {
