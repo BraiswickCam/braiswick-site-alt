@@ -168,12 +168,12 @@ $(document).ready(function (){
 
     $(window).on('scroll', function(){
         if ($(this).scrollTop() >= 50) {
-            $('#returntotop').fadeIn(200);
+            $('#returntotop').fadeIn(600);
             if ($(window).width() >= 768) {
                 $('#navigation').height(0);
             }
         } else {
-            $('#returntotop').fadeOut(200);
+            $('#returntotop').fadeOut(600);
             if ($(window).width() >= 768) {
                 $('#navigation').height(50);
             }
