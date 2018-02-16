@@ -112,6 +112,21 @@ function setNavDirection() {
     }
 }
 
+/**
+ * Toggles the navigation menu open or closed on mobile screens (<768px). Only call from a mobile context (ie. check window width first)
+ */
+function toggleMobileNavMenu() {
+    if ($('#navigation').width() > 0) {
+        $('#navigation').width('0');
+        $('#mobilenavigation').css('left', '10px');
+        $('#mobilenavigation span.glyphicon').removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
+    } else {
+        $('#navigation').width(180);
+        $('#mobilenavigation').css('left', '130px');
+        $('#mobilenavigation span.glyphicon').removeClass('glyphicon-menu-hamburger').addClass('glyphicon-remove');
+    }
+}
+
 
 $(document).ready(function (){      
 
@@ -185,15 +200,7 @@ $(document).ready(function (){
     });
 
     $('#mobilenavigation').on('click', function(){
-        if ($('#navigation').width() > 0) {
-            $('#navigation').width('0');
-            $('#mobilenavigation').css('left', '10px');
-            $('#mobilenavigation span.glyphicon').removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
-        } else {
-            $('#navigation').width(180);
-            $(this).css('left', '130px');
-            $('#mobilenavigation span.glyphicon').removeClass('glyphicon-menu-hamburger').addClass('glyphicon-remove');
-        }
+        toggleMobileNavMenu();
     });
 
     $('#navigation li').on('click', function(){
@@ -201,9 +208,7 @@ $(document).ready(function (){
         if (navTo !== 'orders'){
             $.scrollify.move(navTo);
             if ($(window).width() < 768){
-                $('#navigation').width('0');
-                $('#mobilenavigation').css('left', '10px');
-                $('#mobilenavigation span.glyphicon').removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
+                toggleMobileNavMenu();
             }
         }
     });
