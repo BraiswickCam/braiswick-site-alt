@@ -169,13 +169,37 @@ $(document).ready(function (){
     $(window).on('scroll', function(){
         if ($(this).scrollTop() >= 50) {
             $('#returntotop').fadeIn(200);
+            if ($(window).width() >= 768) {
+                $('#navigation').height(0);
+            }
         } else {
             $('#returntotop').fadeOut(200);
+            if ($(window).width() >= 768) {
+                $('#navigation').height(50);
+            }
         }
     });
 
     $('#returntotop').on('click', function(){
         $.scrollify.move('#intro');
+    });
+
+    $('#mobilenavigation').on('click', function(){
+        $('#navigation').width(180);
+    });
+
+    $('#closenavigation').on('click', function(){
+        $('#navigation').width('0');
+    });
+
+    $('#navigation li').on('click', function(){
+        var navTo = $(this).attr('data-nav-to');
+        if (navTo !== 'orders'){
+            $.scrollify.move(navTo);
+            if ($(window).width() < 768){
+                $('#navigation').width('0');
+            }
+        }
     });
 
     //Initiates Manningtree google map
