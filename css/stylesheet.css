@@ -110,7 +110,8 @@ body {
     background: rgba(0,0,0,0.7);
     border-radius: 35px;
     cursor: pointer;
-    z-index: 99998;
+    z-index: 99999;
+    transition: all 0.3s ease;
 }
 
 #mobilenavigation span.glyphicon {
@@ -130,23 +131,14 @@ body {
     background: rgb(0,0,0);
     background: rgba(0,0,0,0.7);
     transition: all 0.3s ease;
-    z-index: 99999;
+    z-index: 99998;
     overflow-x: hidden;
-}
-
-#navigation span.glyphicon {
-    color: #fff;
-    position: relative;
-    font-size: 24px;
-    float: right;
-    padding: 5px;
-    z-index: 99999;
 }
 
 ul.main-navigation {
     list-style: none;
     margin: 0;
-    padding-top: 50px;
+    padding-top: 55px;
     padding-left: 0px;
     width: 100%;
     white-space: nowrap;
@@ -502,10 +494,6 @@ div.img-flex:nth-of-type(even) {
 
     ul.main-navigation li:hover {
         background: rgba(0,0,0,0.9);
-    }
-    
-    #navigation span.glyphicon {
-        display: none;
     }
 }
 
