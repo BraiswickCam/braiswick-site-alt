@@ -134,6 +134,9 @@ function toggleMobileNavMenu() {
     }
 }
 
+/** 
+ * Toggles the navigation menu open or closed on tablet/desktop screens (>=768px). Also shows/hides the return to top button.
+*/
 function toggleNavMenu() {
     if ($(window).scrollTop() >= 50) {
         $('#returntotop').fadeIn(600);
