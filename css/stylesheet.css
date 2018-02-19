@@ -132,7 +132,7 @@ body {
     background: rgba(0,0,0,0.7);
     transition: all 0.3s ease;
     z-index: 99998;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 ul.main-navigation {
@@ -184,7 +184,7 @@ p {
 }
 
 .slide-one {
-    background: url(../bg_img/draft1.jpg) no-repeat center center;
+    background: url(../bg_img/draft5.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -537,7 +537,7 @@ div.img-flex:nth-of-type(even) {
     }
     
     .slide-one {
-        background: url(../bg_img/draft1_mobile.jpg) no-repeat center bottom;
+        background: url(../bg_img/draft5_mobile_b.jpg) no-repeat center bottom;
     }
     
     .slide-two {
@@ -579,16 +579,11 @@ div.img-flex:nth-of-type(even) {
     }
     
     #intro_a {
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#84000d+0,871d29+100 */
-        background: rgb(132,0,13); /* Old browsers */
-        background: -moz-linear-gradient(top, rgba(132,0,13,1) 0%, rgba(135,29,41,1) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, rgba(132,0,13,1) 0%,rgba(135,29,41,1) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, rgba(132,0,13,1) 0%,rgba(135,29,41,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#84000d', endColorstr='#871d29',GradientType=0 ); /* IE6-9 */
+        background: white;
     }
     
     #intro_b {
-        background: url(../bg_img/draft1_mobile_b.jpg) no-repeat center bottom;
+        background: url(../bg_img/draft5_mobile_b.jpg) no-repeat center bottom;
         background-size: cover;
         display: block;
     }
