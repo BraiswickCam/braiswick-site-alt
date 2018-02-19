@@ -13,7 +13,13 @@ $.scrollify({
     updateHash: true,
     touchScroll:true,
     before:function() {},
-    after:function() {console.log($.scrollify.current());},
+    after:function() {
+        console.log($.scrollify.current());
+        var currentScroll = $.scrollify.current();
+        if ((currentScroll.hasClass('expand') || currentScroll.hasClass('slide-fourfive')) && $(window).width() <= 1024) {
+            $.scrollify.disable();
+        }
+    },
     afterResize: function() {resizeRows();},
     afterRender: function() {}
   });
@@ -98,6 +104,7 @@ function hideOtherCollapses(e) {
  */
 function navlinkOverride(e) {
     e.preventDefault();
+    $.scrollify.enable();
     $.scrollify.move($(e.currentTarget).attr('href'));
 }
 
@@ -153,6 +160,7 @@ $(document).ready(function (){
 
     //Gives section buttons ability to open their expanded section.
     $('button.expanding').on('click', function() {
+        $.scrollify.enable();
         var thisSection = $(this);
         var currentSection = $.scrollify.current();
         var destIdName = '';
@@ -202,6 +210,7 @@ $(document).ready(function (){
     });
 
     $('#returntotop').on('click', function(){
+        $.scrollify.enable();
         $.scrollify.move('#intro');
     });
 
@@ -210,6 +219,7 @@ $(document).ready(function (){
     });
 
     $('#navigation li').on('click', function(){
+        $.scrollify.enable();
         var navTo = $(this).attr('data-nav-to');
         if (navTo !== 'orders'){
             $.scrollify.move(navTo);
