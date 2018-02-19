@@ -127,6 +127,20 @@ function toggleMobileNavMenu() {
     }
 }
 
+function toggleNavMenu() {
+    if ($(window).scrollTop() >= 50) {
+        $('#returntotop').fadeIn(600);
+        if ($(window).width() >= 768) {
+            $('#navigation').height(0);
+        }
+    } else {
+        $('#returntotop').fadeOut(600);
+        if ($(window).width() >= 768) {
+            $('#navigation').height(50);
+        }
+    }
+}
+
 
 $(document).ready(function (){      
 
@@ -134,6 +148,8 @@ $(document).ready(function (){
 
     //Hide loading screen once page is ready
     $('.loader-container').fadeOut('slow');
+
+    toggleNavMenu();
 
     //Gives section buttons ability to open their expanded section.
     $('button.expanding').on('click', function() {
@@ -182,17 +198,7 @@ $(document).ready(function (){
         });
 
     $(window).on('scroll', function(){
-        if ($(this).scrollTop() >= 50) {
-            $('#returntotop').fadeIn(600);
-            if ($(window).width() >= 768) {
-                $('#navigation').height(0);
-            }
-        } else {
-            $('#returntotop').fadeOut(600);
-            if ($(window).width() >= 768) {
-                $('#navigation').height(50);
-            }
-        }
+        toggleNavMenu();
     });
 
     $('#returntotop').on('click', function(){
