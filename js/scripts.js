@@ -212,6 +212,15 @@ $(document).ready(function (){
         toggleNavMenu();
     });
 
+    /* Experimental fix for re-enabling scrollify
+    $('.slide').on('touchstart', function(){
+        if (!$(this).hasClass('expand') && !$(this).hasClass('slide-fourfive')) {
+            if ($.scrollify.isDisabled()) {
+                $.scrollify.enable();
+            }
+        }
+    });*/
+
     $('#returntotop').on('click', function(){
         $.scrollify.enable();
         $.scrollify.move('#intro');
