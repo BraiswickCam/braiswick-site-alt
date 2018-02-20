@@ -580,7 +580,12 @@ div.img-flex:nth-of-type(even) {
     }
     
     .slide-two {
-        background: url(../bg_img/draft4_mobile.jpg) no-repeat center bottom;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#277a96+0,448297+100 */
+        background: #277a96; /* Old browsers */
+        background: -moz-linear-gradient(top, hsla(195,59%,37%,1) 0%, hsla(195,38%,43%,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, hsla(195,59%,37%,1) 0%,hsla(195,38%,43%,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, hsla(195,59%,37%,1) 0%,hsla(195,38%,43%,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#277a96', endColorstr='#448297',GradientType=0 ); /* IE6-9 */
     }
     
     .slide-three {
