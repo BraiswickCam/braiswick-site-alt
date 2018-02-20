@@ -412,6 +412,7 @@ p {
     content: "Q.";
     font-family: 'Kalam', cursive;
     margin-right: 10px;
+    float: left;
 }
 
 .question-anchor {
@@ -479,6 +480,7 @@ p {
     content: "A.";
     font-family: 'Kalam', cursive;
     margin-right: 10px;
+    float: left;
 }
 
 .collapse-parent > a:not(:first-child)::before {
