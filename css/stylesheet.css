@@ -151,6 +151,8 @@ body {
 #mobilenavigation div.open-menu i:nth-child(2) {
     top: 25px;
     background: transparent;
+    left: -30px;
+    transform: rotateZ(180deg);
 }
 
 #mobilenavigation div.open-menu i:nth-child(3) {
