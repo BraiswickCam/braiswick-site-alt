@@ -114,13 +114,50 @@ body {
     transition: all 0.3s ease;
 }
 
-#mobilenavigation span.glyphicon {
+#mobilenavigation div {
     position: relative;
     color: #fff;
-    font-size: 24px;
     left: 8px;
-    top: 8px;
+    top: -6px;
 }
+
+#mobilenavigation div i {
+    position: absolute;
+    display: block;
+    height: 3px;
+    background: white;
+    width: 24px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+
+#mobilenavigation div i:nth-child(1) {
+    top: 17px;
+}
+
+#mobilenavigation div i:nth-child(2) {
+    top: 25px;
+}
+
+#mobilenavigation div i:nth-child(3) {
+    top: 33px;
+}
+
+#mobilenavigation div.open-menu i:nth-child(1) {
+    top: 25px;
+    transform: rotateZ(135deg);
+}
+
+#mobilenavigation div.open-menu i:nth-child(2) {
+    top: 25px;
+    background: transparent;
+}
+
+#mobilenavigation div.open-menu i:nth-child(3) {
+    top: 25px;
+    transform: rotateZ(-135deg);
+}
+
 
 #navigation {
     position: fixed;

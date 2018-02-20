@@ -126,11 +126,11 @@ function toggleMobileNavMenu() {
     if ($('#navigation').width() > 0) {
         $('#navigation').width('0');
         $('#mobilenavigation').css('left', '10px');
-        $('#mobilenavigation span.glyphicon').removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
+        $('#mobilenavigation div.mobile-icon').removeClass('open-menu');
     } else {
         $('#navigation').width(180);
         $('#mobilenavigation').css('left', '130px');
-        $('#mobilenavigation span.glyphicon').removeClass('glyphicon-menu-hamburger').addClass('glyphicon-remove');
+        $('#mobilenavigation div.mobile-icon').addClass('open-menu');
     }
 }
 
