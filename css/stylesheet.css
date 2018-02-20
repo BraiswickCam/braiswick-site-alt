@@ -143,6 +143,10 @@ body {
     top: 33px;
 }
 
+#mobilenavigation div.open-menu i {
+    height: 4px;
+}
+
 #mobilenavigation div.open-menu i:nth-child(1) {
     top: 25px;
     transform: rotateZ(135deg);
