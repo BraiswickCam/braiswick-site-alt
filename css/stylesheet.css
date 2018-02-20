@@ -587,7 +587,7 @@ div.img-flex:nth-of-type(even) {
     }
     
     .slide-one {
-        background: url(../bg_img/draft5_mobile_b.jpg) no-repeat center bottom;
+        background: white;
     }
     
     .slide-two {
@@ -600,7 +600,12 @@ div.img-flex:nth-of-type(even) {
     }
     
     .slide-three {
-        background: url(../bg_img/draft3_mobile.jpg) no-repeat center bottom;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8ebfe5+0,b5d0e6+100 */
+        background: rgb(142,191,229); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(142,191,229,1) 0%, rgba(181,208,230,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(142,191,229,1) 0%,rgba(181,208,230,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(142,191,229,1) 0%,rgba(181,208,230,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8ebfe5', endColorstr='#b5d0e6',GradientType=0 ); /* IE6-9 */
     }
     
     #schoolphotography_a {
