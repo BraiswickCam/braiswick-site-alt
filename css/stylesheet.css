@@ -413,9 +413,17 @@ p {
     margin-right: 10px;
 }
 
+.question-anchor {
+    width: 100%;
+}
+
 .question-anchor span.glyphicon {
     transition: 0.3s transform ease-in-out;
-    margin-left: 10px;
+    font-size: 24px;
+    float: right;
+    position: relative;
+    right: 10px;
+    top: 10px;
 }
 
 .question-anchor.collapsed span.glyphicon {
@@ -440,6 +448,9 @@ p {
 
 .collapse-parent > a > h3 {
     margin-top: 10px;
+    max-width: 90%;
+    max-width: calc(100% - 40px);
+    display: inline-block;
 }
 
 .img-flex {
