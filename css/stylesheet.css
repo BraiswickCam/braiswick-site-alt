@@ -546,7 +546,7 @@ p {
 
 .img-flex-divider {
     border-top: 3px solid rgba(255,255,255,0.6);
-    border-radius: 100%;
+    border-radius: 49%;
     background-clip: padding-box;
     width: 80%;
     height: 0;
