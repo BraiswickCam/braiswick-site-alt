@@ -75,6 +75,7 @@ div.logo h2 {
 }
 
 #returntotop {
+    opacity: 1;
     position: fixed;
     right: 20px;
     bottom: 20px;
@@ -82,29 +83,65 @@ div.logo h2 {
     background: rgba(0,0,0,0.7);
     width: 50px;
     height: 50px;
-    display: none;
     border-radius: 35px;
     cursor: pointer;
     transition: all 0.3s ease;
     z-index: 99999;
 }
 
-#returntotop span.glyphicon {
+#returntotop div.returntotop-icon {
     position: relative;
-    margin: 0;
-    left: 14px;
-    top: 12px;
-    font-size: 24px;
     color: #fff;
-    transition: all 0.3s ease;
+    left: 6px;
+    top -7px;
+    transition: all 0.5s ease-in-out;
 }
 
 #returntotop:hover {
     background: rgba(0,0,0,0.9);
 }
 
-#returntotop:hover span.glyphicon {
-    top: 5px;
+#returntotop:hover div.returntotop-icon {
+    transform: translateY(-5px);
+}
+
+#returntotop div.returntotop-icon i {
+    position: absolute;
+    display: block;
+    height: 6px;
+    background: #fff;
+    width: 24px;
+    left: 0px;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+    top: 20px;
+}
+
+#returntotop div.returntotop-icon i:nth-child(1) {
+    transform: rotateZ(-45deg);
+}
+
+#returntotop div.returntotop-icon i:nth-child(2) {
+    left: 14px;
+    transform: rotateZ(45deg);
+}
+
+#returntotop.returned {
+    opacity: 0;
+    visibility: hidden;
+    background: transparent;
+}
+
+#returntotop.returned div.returntotop-icon i:nth-child(1) {
+    background: transparent;
+    left: -60px;
+    transform: rotateZ(360deg);
+}
+
+#returntotop.returned div.returntotop-icon i:nth-child(2) {
+    background: transparent;
+    left: 60px;
+    transform: rotateZ(-360deg);
 }
 
 #mobilenavigation {

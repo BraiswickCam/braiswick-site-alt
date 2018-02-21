@@ -139,12 +139,14 @@ function toggleMobileNavMenu() {
 */
 function toggleNavMenu() {
     if ($(window).scrollTop() >= 50) {
-        $('#returntotop').fadeIn(600);
+        //$('#returntotop').fadeIn(600);
+        $('#returntotop').removeClass('returned');
         if ($(window).width() >= 768) {
             $('#navigation').height(0);
         }
     } else {
-        $('#returntotop').fadeOut(600);
+        //$('#returntotop').fadeOut(600);
+        $('#returntotop').addClass('returned');
         if ($(window).width() >= 768) {
             $('#navigation').height(50);
         }
