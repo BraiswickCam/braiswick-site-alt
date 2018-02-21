@@ -35,7 +35,7 @@ function resizeRows() {
             if ($(this).find('div[id$="_b"]').length > 0) {
                 var slide_a = $(this).find('div[id$="_a"]');
                 var slide_b = $(this).find('div[id$="_b"]');
-                if (($(this).height() - slide_a.height()) > ($(this).height() / 2)) {
+                if (($(this).height() - slide_a.height()) > ($(this).height() / 2.5)) {
                     slide_b.height($(this).height() - slide_a.height());
                 } else {
                     slide_b.height(0);
