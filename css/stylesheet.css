@@ -554,6 +554,10 @@ p {
     display: block;
 }
 
+.slide-four-expand .img-flex-divider {
+    border-color: rgba(0,0,0,0.6);
+}
+
 div.img-flex:nth-of-type(even) {
     flex-direction: column;
 }
