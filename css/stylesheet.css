@@ -586,6 +586,10 @@ div.img-flex:nth-of-type(even) {
     height: auto;
     align-self: center;
     flex-shrink: 0;
+    background-color: white;
+    border: 1px solid #cbcbcb;
+    box-shadow: 1px 1px 5px #999;
+    padding: 5px;
 }
 
 .img-flex .img-flex-text {
