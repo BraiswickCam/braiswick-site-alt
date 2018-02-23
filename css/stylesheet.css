@@ -92,6 +92,11 @@ div.logo h2 {
     margin-top: 0px;
 }
 
+img.gdpr-img {
+    width: 80px;
+    height: auto;
+}
+
 #returntotop {
     opacity: 1;
     position: fixed;
@@ -746,6 +751,11 @@ div.img-flex:nth-of-type(even) {
     .contact-flex:nth-of-type(even) .contact-flex-text {
         order: 1;
         border-radius: 0px 20px 20px 0px;
+    }
+    
+    img.gdpr-img {
+        margin-top: 22px;
+        width: 120px;
     }
 }
 
