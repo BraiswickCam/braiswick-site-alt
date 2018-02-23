@@ -340,10 +340,6 @@ p {
     margin-bottom: 30px;
 }
 
-.content {
-    margin-top: 200px;
-}
-
 .container-fluid.expand-content {
     background-color: transparent;
     /* height: 100vh; /* REMOVE */
@@ -423,7 +419,7 @@ p {
 
 .map {
     height: 250px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -562,7 +558,7 @@ p {
     margin-bottom: 30px;
 }
 
-.img-flex-divider {
+.img-flex-divider, .contact-flex-divider {
     border-top: 3px solid rgba(255,255,255,0.6);
     border-radius: 49%;
     background-clip: padding-box;
@@ -572,8 +568,12 @@ p {
     display: block;
 }
 
-.slide-four-expand .img-flex-divider {
+.slide-four-expand .img-flex-divider, .contact-flex-divider {
     border-color: rgba(0,0,0,0.6);
+}
+
+.contact-flex-divider {
+    margin-bottom: 30px;
 }
 
 div.img-flex:nth-of-type(even) {
@@ -606,6 +606,26 @@ div.img-flex:nth-of-type(even) {
 
 .img-flex h2 {
     margin-top: 0px;
+}
+
+.contact-flex {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.contact-flex-map {
+    order: 0;
+    padding: 0px 20px;
+    align-self: center;
+    flex-shrink: 1;
+    width: 100%;
+}
+
+.contact-flex .contact-flex-text {
+    order: 1;
+    text-align: center;
+    -ms-flex: 0 1 auto;
 }
 
 .slide-five {
@@ -692,19 +712,36 @@ div.img-flex:nth-of-type(even) {
     ul.main-navigation li:hover {
         background: rgba(0,0,0,0.9);
     }
-}
+    
+    .contact-flex {
+        flex-direction: row;
+        height: 250px;
+    }
 
-@media only screen and (min-width: 992px) {
-    .map {
-        float: right;
+    .contact-flex-map {
+        order: 1;
+        align-self: center;
+        flex-shrink: 1;
+        min-width: 50%;
+        height: 100%;
     }
     
-    .slide-five {
-        text-align: left;
+    .contact-flex-map .map {
+        
     }
 
-    .slide-five .contact-list {
-        display: block;
+    .contact-flex .contact-flex-text {
+        order: 0;
+        /*width: 300px;*/
+        -ms-flex: 0 1 auto;
+    }
+    
+    .contact-flex:nth-of-type(even) .contact-flex-map {
+        order: 0;
+    }
+    
+    .contact-flex:nth-of-type(even) .contact-flex-text {
+        order: 1;
     }
 }
 
