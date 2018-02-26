@@ -632,6 +632,45 @@ div.img-flex:nth-of-type(even) {
     -ms-flex: 0 1 auto;
 }
 
+.packs-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.packs-flex-col {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+}
+
+.packs-flex-img {
+    position: relative;
+}
+
+.packs-flex-img img {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border: 1px solid #cbcbcb;
+    box-shadow: 1px 1px 5px #999;
+    padding: 5px;
+    margin-top: 8px;
+}
+
+.packs-flex-img span {
+    background: black;
+    background: rgba(0,0,0,0.4);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 12px);
+    height: auto;
+    margin: 6px;
+    padding: 4px;
+}
+
 .slide-five {
     text-align: center;
 }
@@ -679,6 +718,11 @@ div.img-flex:nth-of-type(even) {
         padding-left: 20px;
         padding-right: 20px;
         text-align: right;
+    }
+    
+    .packs-flex-col {
+        flex: 50%;
+        max-width: 50%;
     }
     
     #mobilenavigation {
@@ -789,6 +833,20 @@ div.img-flex:nth-of-type(even) {
         padding-left: 20px;
         padding-right: 20px;
         text-align: right;
+    }
+    
+    .packs-flex-col {
+        flex: 25%;
+        max-width: 25%;
+    }
+    
+    .packs-flex-img span {
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+    
+    .packs-flex-img:hover span {
+        opacity: 1;
     }
 }
 
