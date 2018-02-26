@@ -650,6 +650,7 @@ div.img-flex:nth-of-type(even) {
 
 .packs-flex-img img {
     width: 100%;
+    max-width: 450px;
     height: auto;
     background-color: white;
     border: 1px solid #cbcbcb;
@@ -667,6 +668,7 @@ div.img-flex:nth-of-type(even) {
     bottom: 0;
     left: 0;
     width: calc(100% - 12px);
+    max-width: 438px;
     height: auto;
     margin: 6px;
     padding: 4px;
