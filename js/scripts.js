@@ -243,6 +243,16 @@ $(document).ready(function (){
         }
     });
 
+    if ($(window).width() < 768) {
+        $('a[data-toggle="lightbox"]').each(function() {
+            $(this).attr('href', '');
+            $(this).attr('data-toggle', 'disabled');
+        });
+        $('a[data-toggle="disabled"]').on('click', function(e) {
+            e.preventDefault();
+        });
+    }
+
     //Initiates Manningtree google map
     initMap(51.9588432, 1.0582637, 'mapManningtree', 17);
 
