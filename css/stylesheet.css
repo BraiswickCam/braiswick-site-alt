@@ -651,6 +651,7 @@ div.img-flex:nth-of-type(even) {
 
 .packs-flex-img img {
     width: 100%;
+    max-width: 450px;
     height: auto;
     background-color: white;
     border: 1px solid #cbcbcb;
