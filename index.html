@@ -20,6 +20,8 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
         
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-lightbox/0.7.0/bootstrap-lightbox.css" type="text/css">
+        
         <!-- AnimateIt Animations -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/css3-animate-it/1.0.3/css/animations.css" type="text/css">
         
@@ -207,16 +209,17 @@
                                         <p>* Anniversary Individual &amp; Family Group Portraits&nbsp;*&nbsp;Freepose Groups&nbsp;*&nbsp;Take2 Contemporary &amp; Traditional Group Photography&nbsp;*&nbsp;Leavers&nbsp;Packs.</p>
                                     </div>
                                 </div>
-                                <div class="packs-flex">
+                                <section class="packs-flex animated fadeIn delay-250">
                                     <div class="packs-flex-col">
                                         <div class="packs-flex-img">
-                                            <img src="images/about/about_1.jpg">
+                                            <a data-toggle="lightbox" href="#packs-lightbox_01"><img src="images/about/about_1.jpg"></a>
                                             <span>Take2</span>
                                         </div>
                                     </div>
                                     <div class="packs-flex-col">
                                         <div class="packs-flex-img">
-                                            <img src="images/about/about_3.jpg">
+                                            <a data-toggle="lightbox" href="#packs-lightbox_02"><img src="images/about/about_3.jpg"></a>
+                                            <span>Traditional</span>
                                         </div>
                                     </div>
                                     <div class="packs-flex-col">
@@ -229,7 +232,7 @@
                                             <img src="images/about/about_3.jpg">
                                         </div>
                                     </div>
-                                </div>
+                                </section>
                                 <span class="img-flex-divider animated fadeIn delay-250"></span>
                                 <div class="img-flex animated fadeIn delay-500">
                                     <img src="images/schoolphotography/familygroup.jpg">
@@ -538,6 +541,24 @@
             </div>
         </section>
         <!-- END ANIMATED SLIDES -->
+        
+        <div id="packs-lightbox_01" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+            <div class='lightbox-dialog'>
+                <div class='lightbox-content'>
+                    <img src="images/about/about_1.jpg">
+                    <div class="lightbox-caption"><p>Your caption here</p></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="packs-lightbox_02" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+            <div class='lightbox-dialog'>
+                <div class='lightbox-content'>
+                    <img src="images/about/about_3.jpg">
+                    <div class="lightbox-caption"><p>Your caption here</p></div>
+                </div>
+            </div>
+        </div>
        
         <!-- JS FILES -->
         
@@ -546,6 +567,8 @@
         
         <!-- Bootstrap -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-lightbox/0.7.0/bootstrap-lightbox.js"></script>
         
         <!-- AnimateIt -->
         <script src="js/css3-animate-it.js"></script>

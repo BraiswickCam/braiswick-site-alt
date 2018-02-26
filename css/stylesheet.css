@@ -684,6 +684,10 @@ div.img-flex:nth-of-type(even) {
     text-align: left;
 }
 
+.lightbox {
+    z-index: 9999999;
+}
+
 @media only screen and (min-width:768px) {
     .img-flex {
         display: flex;
