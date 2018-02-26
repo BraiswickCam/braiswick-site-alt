@@ -669,6 +669,8 @@ div.img-flex:nth-of-type(even) {
     height: auto;
     margin: 6px;
     padding: 4px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 125%;
 }
 
 .slide-five {
@@ -840,8 +842,8 @@ div.img-flex:nth-of-type(even) {
     }
     
     .packs-flex-col {
-        flex: 25%;
-        max-width: 25%;
+        flex: 33.33%;
+        max-width: 33.33%;
     }
     
     .packs-flex-img span {
