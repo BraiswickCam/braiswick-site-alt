@@ -750,6 +750,7 @@ div.img-flex:nth-of-type(even) {
     .packs-flex-img:hover img {
         background-color: #7FDBFF;
         border-color: #888;
+        box-shadow: 1px 1px 5px #444;
     }
     
     #mobilenavigation {
