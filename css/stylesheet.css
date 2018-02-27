@@ -263,6 +263,10 @@ ul.main-navigation li {
     cursor: pointer;
 }
 
+ul.main-navigation li:last-of-type {
+    padding: 0px;
+}
+
 ul.main-navigation li:hover {
     background: rgba(0,0,0,0.9);
 }
@@ -270,6 +274,10 @@ ul.main-navigation li:hover {
 ul.main-navigation a {
     text-decoration: none;
     color: #fff;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 14px 16px;
 }
 
 ul.main-navigation a:hover {
