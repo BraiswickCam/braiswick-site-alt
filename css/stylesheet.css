@@ -265,11 +265,15 @@ ul.main-navigation li {
 
 ul.main-navigation li:last-of-type {
     padding: 0px;
-    background: rgba(31,142,44,0.7);
+    background: rgba(31,142,44,0.5);
 }
 
 ul.main-navigation li:hover {
     background: rgba(0,0,0,0.9);
+}
+
+ul.main-navigation li:last-of-type:hover {
+    background: rgba(31,142,44,0.9);
 }
 
 ul.main-navigation a {
