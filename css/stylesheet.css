@@ -265,6 +265,7 @@ ul.main-navigation li {
 
 ul.main-navigation li:last-of-type {
     padding: 0px;
+    background: rgba(31,142,44,0.7);
 }
 
 ul.main-navigation li:hover {
