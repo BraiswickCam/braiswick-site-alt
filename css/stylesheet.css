@@ -346,10 +346,9 @@ p {
     background-size: cover;
 }
 
-/*.slide-four-expand {
-    background: url(../images/idservices/id_bg_1.jpg) no-repeat center center;
-    background-size: cover;
-}*/
+.slide-four-expand {
+    border-bottom: 2px dashed rgba(0,0,0,0.7);
+}
 
 .slide-five {
     background: url(../bg_img/sketch.jpg) no-repeat center center;
