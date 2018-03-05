@@ -328,7 +328,7 @@ p {
 }
 
 .slide-three {
-    background: url(../bg_img/draft3.jpg) no-repeat center center;
+    background: url(../bg_img/draft2b.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -930,7 +930,7 @@ div.img-flex:nth-of-type(even) {
     }
     
     #schoolphotography_b {
-        background: url(../bg_img/draft3_mobile_b.jpg) no-repeat center bottom;
+        background: url(../bg_img/draft2_mobile_b.jpg) no-repeat center bottom;
         background-size: cover;
         display: block;
     }
