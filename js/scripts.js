@@ -67,25 +67,6 @@ function centerContent(slide) {
 }
 
 /**
- * Initiate google map.
- * @param {number} latitude Latitude of location marker
- * @param {number} longtitude Longtitude of location marker
- * @param {string} elementId Target div to assign map element to
- * @param {number} zoomLevel Zoom level 
- */
-function initMap(latitude, longtitude, elementId, zoomLevel) {
-    var uluru = {lat: latitude, lng: longtitude};
-    var map = new google.maps.Map(document.getElementById(elementId), {
-      zoom: zoomLevel,
-      center: uluru
-    });
-    var marker = new google.maps.Marker({
-      position: uluru,
-      map: map
-    });
-}
-
-/**
  * Hides all other FAQ collapse sections when a new one is opened
  * @param {event} e Event object (e.currentTarget === $(this))
  */
@@ -252,10 +233,4 @@ $(document).ready(function (){
             e.preventDefault();
         });
     }
-
-    //Initiates Manningtree google map
-    initMap(51.9588432, 1.0582637, 'mapManningtree', 17);
-
-    //Initiates Mansfield google map
-    initMap(53.0679812, -1.2519532, 'mapMansfield', 18);
 });

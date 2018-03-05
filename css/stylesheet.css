@@ -350,10 +350,6 @@ p {
     border-bottom: 2px dashed rgba(0,0,0,0.7);
 }
 
-.slide-five {
-    background: url(../bg_img/sketch.jpg) no-repeat center center;
-}
-
 .slide-five h1 {
     margin-bottom: 30px;
 }
@@ -639,6 +635,11 @@ div.img-flex:nth-of-type(even) {
     width: 100%;
 }
 
+.contact-flex-map img {
+    width: 100%;
+    height: auto;
+}
+
 .contact-flex .contact-flex-text {
     order: 1;
     text-align: center;
@@ -805,7 +806,6 @@ div.img-flex:nth-of-type(even) {
     
     .contact-flex {
         flex-direction: row;
-        height: 250px;
     }
 
     .contact-flex-map {
@@ -824,10 +824,6 @@ div.img-flex:nth-of-type(even) {
         order: 0;
         /*width: 300px;*/
         -ms-flex: 0 1 auto;
-        background: rgba(255,255,255,0.7);
-        padding-right: 20px;
-        padding-left: 20px;
-        border-radius: 20px 0px 0px 20px;
     }
     
     .contact-flex:nth-of-type(even) .contact-flex-map {
@@ -836,7 +832,6 @@ div.img-flex:nth-of-type(even) {
     
     .contact-flex:nth-of-type(even) .contact-flex-text {
         order: 1;
-        border-radius: 0px 20px 20px 0px;
     }
     
     img.gdpr-img {
