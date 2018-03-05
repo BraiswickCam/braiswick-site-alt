@@ -721,6 +721,10 @@ div.img-flex:nth-of-type(even) {
     color: white;
 }
 
+.lightbox[id="packs-lightbox_04"] a {
+    color: #222;
+}
+
 @media only screen and (min-width:768px) {
     .img-flex {
         display: flex;
