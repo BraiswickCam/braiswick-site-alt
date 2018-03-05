@@ -117,7 +117,6 @@ img.gdpr-img {
     position: relative;
     color: #fff;
     left: 6px;
-    top -7px;
     transition: all 0.5s ease-in-out;
 }
 
@@ -691,6 +690,24 @@ div.img-flex:nth-of-type(even) {
     font-size: 125%;
 }
 
+.packs-flex-img i.glyphicon {
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top: 25px;
+    right: 18px;
+    opacity: 0;
+    transition: 0.3s all ease;
+}
+
+.packs-flex-img i.glyphicon.alt-colour {
+    color: #222;
+}
+
+.packs-flex-img:hover i.glyphicon {
+    opacity: 0;
+}
+
 .slide-five {
     text-align: center;
 }
@@ -842,6 +859,14 @@ div.img-flex:nth-of-type(even) {
         margin-top: 22px;
         width: 120px;
     }
+    
+    .packs-flex-img i.glyphicon {
+        opacity: 1;
+    }
+    
+    .packs-flex-img:hover i.glyphicon {
+        opacity: 1;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -887,6 +912,14 @@ div.img-flex:nth-of-type(even) {
     }
     
     .packs-flex-img:hover span {
+        opacity: 1;
+    }
+    
+    .packs-flex-img i.glyphicon {
+        opacity: 0;
+    }
+    
+    .packs-flex-img:hover i.glyphicon {
         opacity: 1;
     }
 }
