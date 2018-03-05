@@ -342,7 +342,7 @@ p {
 }
 
 .slide-four {
-    background: url(../bg_img/draft2.jpg) no-repeat center center;
+    background: url(../bg_img/id.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -966,7 +966,7 @@ div.img-flex:nth-of-type(even) {
     
     #idservices_b {
         background-color: white;
-        background: url(../bg_img/draft2_mobile_b.jpg) no-repeat center bottom;
+        background: url(../bg_img/id_mobile_b.jpg) no-repeat center bottom;
         background-size: cover;
         display: block;
     }
