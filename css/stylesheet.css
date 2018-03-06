@@ -662,6 +662,7 @@ div.img-flex:nth-of-type(even) {
 
 .packs-flex-img {
     position: relative;
+    max-width: 450px;
 }
 
 .packs-flex-img img {
