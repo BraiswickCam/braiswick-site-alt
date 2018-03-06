@@ -726,6 +726,32 @@ div.img-flex:nth-of-type(even) {
     text-align: left;
 }
 
+.contact-flex-divider-alt {
+    width: 80%;
+}
+
+.contact-flex-divider-alt::before, .contact-flex-divider-alt::after {
+    content: "";
+    width: 30%;
+    border-top: 3px solid rgba(0,0,0,0.6);
+    background-clip: padding-box;
+    height: 0;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.contact-flex-divider-alt::before {
+    border-top-left-radius: 49%;
+    border-bottom-left-radius: 49%;
+    margin-right: 10px;
+}
+
+.contact-flex-divider-alt::after {
+    border-top-right-radius: 49%;
+    border-bottom-right-radius: 49%;
+    margin-left: 10px;
+}
+
 .lightbox {
     z-index: 9999999;
 }
