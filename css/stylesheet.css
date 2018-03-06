@@ -747,6 +747,11 @@ div.img-flex:nth-of-type(even) {
     color: #222;
 }
 
+.lightbox p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 125%;
+}
+
 .footer {
     background: #222;
     color: #fff;
