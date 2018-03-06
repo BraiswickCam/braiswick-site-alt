@@ -881,6 +881,7 @@ p.footer-link:not(:first-child)::before {
     img.gdpr-img {
         margin-top: 22px;
         width: 120px;
+        cursor: pointer;
     }
     
     .packs-flex-img i.glyphicon {

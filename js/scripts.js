@@ -224,6 +224,11 @@ $(document).ready(function (){
         }
     });
 
+    $('.gdpr-img').on('click', function(){
+        $.scrollify.move('#faq');
+        $('#qup3').collapse('show');
+    })
+
     if ($(window).width() < 768) {
         $('a[data-toggle="lightbox"]').each(function() {
             $(this).attr('href', '');
