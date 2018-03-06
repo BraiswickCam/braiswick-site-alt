@@ -636,6 +636,7 @@ div.img-flex:nth-of-type(even) {
 
 .contact-flex-map img {
     width: 100%;
+    max-width: 900px;
     height: auto;
 }
 
