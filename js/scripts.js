@@ -16,7 +16,7 @@ $.scrollify({
     after:function() {
         console.log($.scrollify.current());
         var currentScroll = $.scrollify.current();
-        if ((currentScroll.hasClass('expand') || currentScroll.hasClass('slide-fourfive')) && $(window).width() <= 1024) {
+        if ((currentScroll.hasClass('expand') || currentScroll.hasClass('slide-fourfive') || currentScroll.hasClass('slide-five')) && $(window).width() <= 1024) {
             $.scrollify.disable();
         }
     },
