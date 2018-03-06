@@ -2,7 +2,7 @@
 $.scrollify({
     section : ".slide",
     sectionName: "idname",
-    interstitialSection : "",
+    interstitialSection : ".footer",
     easing: "easeOutExpo",
     scrollSpeed: 1100,
     offset : 0,

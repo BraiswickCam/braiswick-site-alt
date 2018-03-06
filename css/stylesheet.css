@@ -742,6 +742,27 @@ div.img-flex:nth-of-type(even) {
     color: #222;
 }
 
+.footer {
+    background: #222;
+    color: #fff;
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+}
+
+p.footer-link {
+    display: inline-block;
+}
+
+p.footer-link a {
+    color: #ddd;
+}
+
+p.footer-link:not(:first-child)::before {
+    content: "|";
+    padding: 0px 5px;
+}
+
 @media only screen and (min-width:768px) {
     .img-flex {
         display: flex;
