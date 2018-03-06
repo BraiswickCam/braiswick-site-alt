@@ -644,6 +644,7 @@ div.img-flex:nth-of-type(even) {
     order: 1;
     text-align: center;
     -ms-flex: 0 1 auto;
+    align-self: center;
 }
 
 .packs-flex {
