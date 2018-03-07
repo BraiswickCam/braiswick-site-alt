@@ -116,19 +116,19 @@ function toggleMobileNavMenu() {
 }
 
 /** 
- * Toggles the navigation menu open or closed on tablet/desktop screens (>=768px). Also shows/hides the return to top button.
+ * Toggles the navigation menu open or closed on tablet/desktop screens (>=1024). Also shows/hides the return to top button.
 */
 function toggleNavMenu() {
     if ($(window).scrollTop() >= 50) {
         //$('#returntotop').fadeIn(600);
         $('#returntotop').removeClass('returned');
-        if ($(window).width() >= 768) {
+        if ($(window).width() >= 1024) {
             $('#navigation').height(0);
         }
     } else {
         //$('#returntotop').fadeOut(600);
         $('#returntotop').addClass('returned');
-        if ($(window).width() >= 768) {
+        if ($(window).width() >= 1024) {
             $('#navigation').height(50);
         }
     }
