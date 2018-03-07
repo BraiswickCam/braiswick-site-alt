@@ -732,7 +732,7 @@ div.img-flex:nth-of-type(even) {
 
 .contact-flex-divider-alt::before, .contact-flex-divider-alt::after {
     content: "";
-    width: 30%;
+    width: 10%;
     border-top: 3px solid rgba(0,0,0,0.6);
     background-clip: padding-box;
     height: 0;
@@ -924,6 +924,10 @@ p.footer-link:not(:first-child)::before {
     
     .packs-flex-img:hover i.glyphicon {
         opacity: 1;
+    }
+    
+    .contact-flex-divider-alt::before, .contact-flex-divider-alt::after {
+        width: 30%;
     }
 }
 
