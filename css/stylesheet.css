@@ -402,6 +402,10 @@ p {
     font-size: 350%;
 }
 
+.slide-five h1 {
+    margin-top: 0px;
+}
+
 .content p {
     font-size: 150%;
     padding: 20px;
