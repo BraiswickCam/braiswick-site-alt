@@ -553,6 +553,10 @@ p {
     float: left;
 }
 
+ul.address {
+    list-style: none;
+}
+
 .collapse-parent > a:not(:first-child)::before {
     content: "";
     border-top: 2px lightgray solid;

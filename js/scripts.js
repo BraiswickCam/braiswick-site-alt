@@ -228,7 +228,13 @@ $(document).ready(function (){
         $.scrollify.enable();
         $.scrollify.move('#faq');
         $('#qup3').collapse('show');
-    })
+    });
+
+    $('a.privacypolicy').on('click', function(){
+        $.scrollify.enable();
+        $.scrollify.move('#faq');
+        $('#qup4').collapse('show');
+    });
 
     if ($(window).width() < 768) {
         $('a[data-toggle="lightbox"]').each(function() {
