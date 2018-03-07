@@ -218,7 +218,7 @@ $(document).ready(function (){
         var navTo = $(this).attr('data-nav-to');
         if (navTo !== 'orders'){
             $.scrollify.move(navTo);
-            if ($(window).width() < 768){
+            if ($(window).width() < 1024){
                 toggleMobileNavMenu();
             }
         }
