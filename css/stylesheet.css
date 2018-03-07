@@ -736,28 +736,26 @@ div.img-flex:nth-of-type(even) {
 
 .contact-flex-divider-alt {
     width: 80%;
+    font-size: 0px;
 }
 
 .contact-flex-divider-alt::before, .contact-flex-divider-alt::after {
     content: "";
-    width: 10%;
+    width: 40%;
     border-top: 3px solid rgba(0,0,0,0.6);
     background-clip: padding-box;
     height: 0;
     display: inline-block;
-    padding-bottom: 5px;
 }
 
 .contact-flex-divider-alt::before {
     border-top-left-radius: 49%;
     border-bottom-left-radius: 49%;
-    margin-right: 10px;
 }
 
 .contact-flex-divider-alt::after {
     border-top-right-radius: 49%;
     border-bottom-right-radius: 49%;
-    margin-left: 10px;
 }
 
 .lightbox {
@@ -898,8 +896,21 @@ p.footer-link:not(:first-child)::before {
         opacity: 1;
     }
     
+    .contact-flex-divider-alt {
+        font-size: 16px;
+    }
+    
     .contact-flex-divider-alt::before, .contact-flex-divider-alt::after {
         width: 30%;
+        padding-bottom: 5px;
+    }
+    
+    .contact-flex-divider-alt::before {
+        margin-right: 10px;
+    }
+    
+    .contact-flex-divider-alt::after {
+        margin-left: 10px;
     }
 }
 
