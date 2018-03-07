@@ -225,6 +225,7 @@ $(document).ready(function (){
     });
 
     $('.gdpr-img').on('click', function(){
+        $.scrollify.enable();
         $.scrollify.move('#faq');
         $('#qup3').collapse('show');
     })
