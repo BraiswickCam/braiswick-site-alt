@@ -1,0 +1,92 @@
+.animated { 
+    -webkit-animation-duration: 1s; 
+    -moz-animation-duration: 1s; 
+      -o-animation-duration: 1s; 
+         animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    -moz-animation-fill-mode: both; 
+      -o-animation-fill-mode: both; 
+         animation-fill-mode: both; 
+} 
+
+.delay-250 {
+    -webkit-animation-delay:0.25s;
+    -moz-animation-delay:0.25s;
+    -o-animation-delay:0.25s;
+    animation-delay:0.25s;
+}
+.delay-500 {
+    -webkit-animation-delay:0.5s;
+    -moz-animation-delay:0.5s;
+    -o-animation-delay:0.5s;
+    animation-delay:0.5s;
+}
+.delay-750 {
+    -webkit-animation-delay:0.75s;
+    -moz-animation-delay:0.75s;
+    -o-animation-delay:0.75s;
+    animation-delay:0.75s;
+}
+.delay-1000 {
+    -webkit-animation-delay:1.0s;
+    -moz-animation-delay:1.0s;
+    -o-animation-delay:1.0s;
+    animation-delay:1.0s;
+}
+.delay-1250 {
+    -webkit-animation-delay:1.25s;
+    -moz-animation-delay:1.25s;
+    -o-animation-delay:1.25s;
+    animation-delay:1.25s;
+}
+.delay-1500 {
+    -webkit-animation-delay:1.5s;
+    -moz-animation-delay:1.5s;
+    -o-animation-delay:1.5s;
+    animation-delay:1.5s;
+}
+.delay-1750 {
+    -webkit-animation-delay:1.75s;
+    -moz-animation-delay:1.75s;
+    -o-animation-delay:1.75s;
+    animation-delay:1.75s;
+}
+.delay-2000 {
+    -webkit-animation-delay:2.0s;
+    -moz-animation-delay:2.0s;
+    -o-animation-delay:2.0s;
+    animation-delay:2.0s;
+}
+
+/**********
+* Fade In *
+**********/ 
+@-webkit-keyframes fadeIn { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;
+        display:block;} 
+} 
+@-moz-keyframes fadeIn { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;
+        display:block;} 
+} 
+@-o-keyframes fadeIn { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;
+        display:block;} 
+} 
+@keyframes fadeIn { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;
+        display:block;} 
+}
+.fadeIn{
+    opacity:0;
+}
+.fadeIn.go { 
+    -webkit-animation-name: fadeIn; 
+    -moz-animation-name: fadeIn; 
+      -o-animation-name: fadeIn; 
+         animation-name: fadeIn; 
+}
