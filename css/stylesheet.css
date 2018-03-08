@@ -1000,7 +1000,7 @@ p.footer-link:not(:first-child)::before {
     }
     
     .packs-flex-img i.glyphicon {
-        opacity: 0;
+        opacity: 1;
     }
     
     .packs-flex-img:hover i.glyphicon {
