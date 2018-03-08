@@ -134,6 +134,13 @@ function toggleNavMenu() {
     }
 }
 
+// function for scrollbar click detection
+var clickedOnScrollbar = function(mouseX){
+    if( $(window).innerWidth() <= mouseX ){
+      return true;
+    }
+  }
+
 
 $(document).ready(function (){      
 
@@ -245,4 +252,10 @@ $(document).ready(function (){
             e.preventDefault();
         });
     }
+
+    $(document).mousedown(function(e){
+        if( clickedOnScrollbar(e.clientX) ){
+          $.scrollify.disable();
+        }
+      });
 });
