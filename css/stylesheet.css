@@ -775,7 +775,7 @@ div.img-flex:nth-of-type(even) {
     color: white;
 }
 
-.lightbox[id="packs-lightbox_04"] a {
+.lightbox[id="packs-lightbox_04"] a, .lightbox[id="packs-lightbox_06"] a {
     color: #222;
 }
 
