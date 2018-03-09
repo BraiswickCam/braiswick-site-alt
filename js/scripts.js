@@ -261,6 +261,8 @@ $(document).ready(function (){
 
       $('.slide-one .content').imagesLoaded(function() {
           console.log('Images loaded');
-          centerContent($('.slide-one'));
+          if (!$(".slide-one div[id$='_b']").is(':visible')) {
+            centerContent($('.slide-one'));
+          }          
       });
 });
