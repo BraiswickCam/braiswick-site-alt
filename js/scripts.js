@@ -214,7 +214,6 @@ $(document).ready(function (){
     $('#returntotop').on('click', function(){
         $.scrollify.enable();
         $.scrollify.move('#intro');
-        $.scrollify.update();
     });
 
     $('#mobilenavigation').on('click', function(){
@@ -230,7 +229,6 @@ $(document).ready(function (){
                 toggleMobileNavMenu();
             }
         }
-        $.scrollify.update();
     });
 
     $('.gdpr-img').on('click', function(){
