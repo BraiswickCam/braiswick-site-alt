@@ -265,4 +265,11 @@ $(document).ready(function (){
             centerContent($('.slide-one'));
           }          
       });
+
+      $('.slide-five .content').imagesLoaded(function() {
+        console.log('Images loaded');
+        if (!$(".slide-one div[id$='_b']").is(':visible')) {
+          centerContent($('.slide-five'));
+        }          
+    });
 });
