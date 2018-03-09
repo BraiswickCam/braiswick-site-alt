@@ -258,4 +258,9 @@ $(document).ready(function (){
           $.scrollify.disable();
         }
       });
+
+      $('.slide-one .content').imagesLoaded(function() {
+          console.log('Images loaded');
+          centerContent($('.slide-one'));
+      });
 });
